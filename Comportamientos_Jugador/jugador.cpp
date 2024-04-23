@@ -222,8 +222,7 @@ void ComportamientoJugador::VisualizaPlan(const stateN0 &st, const list<Action> 
 
 
 /** primera aproximación a la implementación de la búsqueda en anchura */
-list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,
-	  					const vector<vector<unsigned char>> &mapa)
+list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa)
 {
 	nodeN0 current_node; //NO inicio
 	current_node.st = inicio;
@@ -291,14 +290,18 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,
 
 		if (!SolutionFound and !frontier.empty())
 			current_node = frontier.front();
+			while(!frontier.empty() and explored.find(current_node) != explored.end()){
+				frontier.pop_front();
+				if(!frontier.empty()) current_node = frontier.front();
+			}
 	
 	}
-
 	
+
 	if(SolutionFound){
 		plan = current_node.secuencia;
 		cout << "Plan encontrado: ";
-		PintaPlan(plan);
+		PintaPlan(current_node.secuencia);
 	}
 
 	return plan;
