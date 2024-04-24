@@ -45,6 +45,38 @@ struct nodeN0{
   }
 };
 
+struct stateN1{
+  ubicacion jugador;
+  ubicacion sonambulo;
+
+  bool operator== (const stateN1 &x) const{
+    if(jugador == x.jugador && sonambulo.f == x.sonambulo.f && sonambulo.c == x.sonambulo.c)  return true;
+    else return false;
+  }
+
+  bool operator<(const stateN1 &st) const{
+    return (jugador.f < st.jugador.f ||
+           (jugador.f == st.jugador.f && jugador.c < st.jugador.c) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f < st.sonambulo.f) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f == st.sonambulo.f && sonambulo.c < st.sonambulo.c) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f == st.sonambulo.f && sonambulo.c == st.sonambulo.c && sonambulo.brujula < st.sonambulo.brujula));
+  }
+};
+
+struct nodeN1{
+  stateN1 st;
+  list<Action> secuencia;
+
+  bool operator==(const nodeN1 &nd) const{
+    return (st == nd.st);
+  }
+
+  bool operator<(const nodeN1 &nd) const
+    {
+        return (st < nd.st);
+    }
+};
 
 
 class ComportamientoJugador : public Comportamiento {
@@ -84,6 +116,7 @@ class ComportamientoJugador : public Comportamiento {
     bool hayPlan;
     stateN0 c_state;
     ubicacion goal;
+    stateN1 c_stateN1;
 
 
 
