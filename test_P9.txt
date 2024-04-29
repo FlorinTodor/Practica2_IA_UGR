@@ -1,44 +1,8 @@
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-	El empujón ha sido efectivo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
-Recibido un empujón por un lobo
 Se agotaron los instantes de simulacion
 Instantes de simulacion no consumidos: 0
-Tiempo Consumido: 0.006292
+Tiempo Consumido: 0.004839
 Nivel Final de Bateria: 3000
-Colisiones: 24
-Empujones: 12
+Colisiones: 0
+Empujones: 0
 Porcentaje de mapa descubierto: 0
 Objetivos encontrados: (0) 0

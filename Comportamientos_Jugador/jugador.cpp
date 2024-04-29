@@ -17,6 +17,7 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,co
 list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
 bool estaEnCampoVision(const stateN1 &st);
 stateN1 applyN1(const Action &a, const stateN1 &st, const vector<vector<unsigned char>> &mapa);
+bool SonambuloALaVista(ubicacion &jugador, ubicacion &sonambulo);
 
 Action ComportamientoJugador::think(Sensores sensores)
 {
@@ -443,6 +444,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 		explored.insert(current_node);
 
 		//Si no vemos al colaborador, solo generamos los del jugador
+		//if(SonambuloALaVista(current_node.st.jugador,current_node.st.colaborador))
 		if(estaEnCampoVision(current_node.st))
 		{
 				//Si vemos al colaborador
@@ -478,6 +480,17 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					// Añadir hijo a la lista de nodos por explorar
 					child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
 					frontier.push_back(child_clb_turnsr);
+				}
+
+				// Generar hijo act_CLB_STOP
+				nodeN1 child_clb_stop = current_node;
+				child_clb_turnsr.st = applyN1(act_CLB_STOP, current_node.st, mapa);
+
+				if(explored.find(child_clb_stop ) == explored.end())
+				{
+					// Añadir hijo a la lista de nodos por explorar
+					child_clb_stop .secuencia.push_back(act_CLB_STOP);
+					frontier.push_back(child_clb_stop );
 				}
 
 			}
@@ -525,10 +538,424 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 
 	if(SolutionFound)
 		plan = current_node.secuencia;
+		cout << "Plan encontrado: ";
+		PintaPlan(current_node.secuencia);
 
 	return plan;
 }
 
+bool SonambuloALaVista(ubicacion &jugador, ubicacion &sonambulo)
+{
+
+	switch(jugador.brujula){
+		case norte:
+
+			if(jugador.c == sonambulo.c){
+				if((jugador.f-1) == sonambulo.f)	// posicion 2
+					return true;
+				if((jugador.f-2) == sonambulo.f)	// posicion 6
+					return true;
+				if((jugador.f-3) == sonambulo.f)	// posicion 12
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-1)){
+				if((jugador.f-1) == sonambulo.f)	// posicion 1
+					return true;
+				if((jugador.f-2) == sonambulo.f)	// posicion 5
+					return true;
+				if((jugador.f-3) == sonambulo.f)	// posicion 11
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-2)){
+				if((jugador.f-2) == sonambulo.f)	// posicion 4
+					return true;
+				if((jugador.f-3) == sonambulo.f)	// posicion 10
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-3)){
+				if((jugador.f-3) == sonambulo.f)	// posicion 9
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+1)){
+				if((jugador.f-1) == sonambulo.f)	// posicion 3
+					return true;
+				if((jugador.f-2) == sonambulo.f)	// posicion 7
+					return true;
+				if((jugador.f-3) == sonambulo.f)	// posicion 13
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+2)){
+				if((jugador.f-2) == sonambulo.f)	// posicion 8
+					return true;
+				if((jugador.f-3) == sonambulo.f)	// posicion 14
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+3)){
+				if((jugador.f-3) == sonambulo.f)	// posicion 15
+					return true;
+			}
+
+		break;
+
+		case noreste:
+			
+			if(jugador.f == sonambulo.f){
+				if((jugador.c+1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-1)){
+				if(jugador.c == sonambulo.c)		// posicion 1
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-2)){
+				if(jugador.c == sonambulo.c)		// posicion 4
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-3)){
+				if(jugador.c == sonambulo.c)		// posicion 9
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 10
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 11
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case este:
+
+			if(jugador.f == sonambulo.f){
+				if((jugador.c+1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-1)){
+				if((jugador.c+1) == sonambulo.c)	// posicion 1
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 11
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-2)){
+				if((jugador.c+2) == sonambulo.c)	// posicion 4
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 10
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-3)){
+				if((jugador.c+3) == sonambulo.c)	// posicion 9
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+1)){
+				if((jugador.c+1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+2)){
+				if((jugador.c+2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+3)){
+				if((jugador.c+3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+			
+		break;
+
+		case sureste:
+			
+			if(jugador.f == sonambulo.f){
+				if((jugador.c+1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+1)){
+				if(jugador.c == sonambulo.c)		// posicion 1
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+2)){
+				if(jugador.c == sonambulo.c)		// posicion 4
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+3)){
+				if(jugador.c == sonambulo.c)		// posicion 9
+					return true;
+				if((jugador.c+1) == sonambulo.c)	// posicion 10
+					return true;
+				if((jugador.c+2) == sonambulo.c)	// posicion 11
+					return true;
+				if((jugador.c+3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case sur:
+
+			if(jugador.c == sonambulo.c){
+				if((jugador.f+1) == sonambulo.f)	// posicion 2
+					return true;
+				if((jugador.f+2) == sonambulo.f)	// posicion 6
+					return true;
+				if((jugador.f+3) == sonambulo.f)	// posicion 12
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-1)){
+				if((jugador.f+1) == sonambulo.f)	// posicion 3
+					return true;
+				if((jugador.f+2) == sonambulo.f)	// posicion 7
+					return true;
+				if((jugador.f+3) == sonambulo.f)	// posicion 13
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-2)){
+				if((jugador.f+2) == sonambulo.f)	// posicion 8
+					return true;
+				if((jugador.f+3) == sonambulo.f)	// posicion 14
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c-3)){
+				if((jugador.f+3) == sonambulo.f)	// posicion 15
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+1)){
+				if((jugador.f+1) == sonambulo.f)	// posicion 1
+					return true;
+				if((jugador.f+2) == sonambulo.f)	// posicion 5
+					return true;
+				if((jugador.f+3) == sonambulo.f)	// posicion 11
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+2)){
+				if((jugador.f+2) == sonambulo.f)	// posicion 4
+					return true;
+				if((jugador.f+3) == sonambulo.f)	// posicion 10
+					return true;
+			}
+
+			if(jugador.c == (sonambulo.c+3)){
+				if((jugador.f+3) == sonambulo.f)	// posicion 9
+					return true;
+			}
+			
+		break;
+
+		case suroeste:
+			
+			if(jugador.f == sonambulo.f){
+				if((jugador.c-1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+1)){
+				if(jugador.c == sonambulo.c)		// posicion 1
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+2)){
+				if(jugador.c == sonambulo.c)		// posicion 4
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+3)){
+				if(jugador.c == sonambulo.c)		// posicion 9
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 10
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 11
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case oeste:
+
+			if(jugador.f == sonambulo.f){
+				if((jugador.c-1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-1)){
+				if((jugador.c-1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-2)){
+				if((jugador.c-2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-3)){
+				if((jugador.c-3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+1)){
+				if((jugador.c-1) == sonambulo.c)	// posicion 
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 11
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+2)){
+				if((jugador.c-2) == sonambulo.c)	// posicion 4
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 10
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f+3)){
+				if((jugador.c-3) == sonambulo.c)	// posicion 9
+					return true;
+			}
+			
+		break;
+		
+		case noroeste:
+			
+			if(jugador.f == sonambulo.f){
+				if((jugador.c-1) == sonambulo.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-1)){
+				if(jugador.c == sonambulo.c)		// posicion 1
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-2)){
+				if(jugador.c == sonambulo.c)		// posicion 4
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 5
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (sonambulo.f-3)){
+				if(jugador.c == sonambulo.c)		// posicion 9
+					return true;
+				if((jugador.c-1) == sonambulo.c)	// posicion 10
+					return true;
+				if((jugador.c-2) == sonambulo.c)	// posicion 11
+					return true;
+				if((jugador.c-3) == sonambulo.c)	// posicion 12
+					return true;
+			}
+
+		break;				
+
+	}
+
+	return false;
+}
 bool estaEnCampoVision(const stateN1 &st)
 {
 	ubicacion ubicacion_colaborador = st.colaborador;
