@@ -446,24 +446,35 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 		{
 				//Si vemos al colaborador
 
+				// Generar hijo act_CLB_STOP
+				nodeN1 child_clb_stop = current_node;
+				child_clb_stop.st = applyN1(act_CLB_STOP, current_node.st, mapa);
+				child_clb_stop .secuencia.push_back(act_CLB_STOP);
+
+				if(explored.find(child_clb_stop ) == explored.end())
+				{
+					// Añadir hijo a la lista de nodos por explorar
+					
+					frontier.push_back(child_clb_stop );
+				}
+
 			nodeN1 child_clb_walk = current_node;
 			//stateN1 prueba = child_clb_walk.st;
 			
 			child_clb_walk.st = applyN1(act_CLB_WALK, current_node.st, mapa);
-			
+			child_clb_walk.secuencia.push_back(act_CLB_WALK);
 
 			
 			if(child_clb_walk.st.colaborador.f == final.f 
 			and child_clb_walk.st.colaborador.c == final.c)
 			{
-				child_clb_walk.secuencia.push_back(act_CLB_WALK);
+				
 				current_node = child_clb_walk;
 				SolutionFound = true;
 			}    
 			else if(explored.find(child_clb_walk) == explored.end())
 			{
-				// Añadir hijo a la lista de nodos por explorar
-				child_clb_walk.secuencia.push_back(act_CLB_WALK);
+				// Añadir hijo a la lista de nodos por explora
 				frontier.push_back(child_clb_walk);
 			}
 
@@ -471,26 +482,16 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 				// Generar hijo act_CLB_TURN_SR
 				nodeN1 child_clb_turnsr = current_node;
 				child_clb_turnsr.st = applyN1(act_CLB_TURN_SR, current_node.st, mapa);
-				
+				child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
 
 				if(explored.find(child_clb_turnsr) == explored.end())
 				{
 					// Añadir hijo a la lista de nodos por explorar
-					child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+					
 					frontier.push_back(child_clb_turnsr);
 				}
 
-				// Generar hijo act_CLB_STOP
-				nodeN1 child_clb_stop = current_node;
-				child_clb_turnsr.st = applyN1(act_CLB_STOP, current_node.st, mapa);
 				
-
-				if(explored.find(child_clb_stop ) == explored.end())
-				{
-					// Añadir hijo a la lista de nodos por explorar
-					child_clb_stop .secuencia.push_back(act_CLB_STOP);
-					frontier.push_back(child_clb_stop );
-				}
 				
 
 		}
@@ -508,42 +509,65 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 				}
 
 			// Generar hijo actWALK
+
+				
+
+
 				nodeN1 child_walk = current_node;
 				child_walk.st = applyN1(actWALK, current_node.st, mapa);
+				child_walk.secuencia.push_back(actWALK);
 				
 				if (explored.find(child_walk) == explored.end())
 				{
-					child_walk.secuencia.push_back(actWALK);
+					
 					frontier.push_back(child_walk);
 				}
 
-				if(child_walk.st.colaborador.f == final.f 
-				and child_walk.st.colaborador.c == final.c)
+				if(child_walk.st.colaborador.f == final.f and child_walk.st.colaborador.c == final.c)
 				{
 					
 					current_node = child_walk;
 					SolutionFound = true;
 				}    
 
+
+			// GENERAR HIJO ACTRUN
+
+				nodeN1 child_run = current_node;
+				child_run.st = applyN1(actRUN, current_node.st, mapa);
+				child_run.secuencia.push_back(actRUN);
+
+				if (explored.find(child_run) == explored.end()){
+					
+					frontier.push_back(child_run);
+				}
+				else if (child_run.st.colaborador.f == final.f and child_run.st.colaborador.c == final.c){
+					current_node = child_run;
+					SolutionFound = true;
+				}
+				
+				
 				
 
 				// Generar hijo actTurn_R
 				nodeN1 child_turnsr = current_node;
 				child_turnsr.st = applyN1(actTURN_SR, current_node.st, mapa);
+				child_turnsr.secuencia.push_back(actTURN_SR);
 				
 				if (explored.find(child_turnsr) == explored.end())
 				{
-					child_turnsr.secuencia.push_back(actTURN_SR);
+					
 					frontier.push_back(child_turnsr);
 				}
 				
 				// Generar hijo actTurn_L
 				nodeN1 child_turnl = current_node;
 				child_turnl.st = applyN1(actTURN_L, current_node.st, mapa);
+				child_turnl.secuencia.push_back(actTURN_L);
 				
 				if (explored.find(child_turnl) == explored.end())
 				{
-					child_turnl.secuencia.push_back(actTURN_L);
+					
 					frontier.push_back(child_turnl);
 				}
 
