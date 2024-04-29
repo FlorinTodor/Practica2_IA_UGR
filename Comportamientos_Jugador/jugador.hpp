@@ -51,7 +51,7 @@ struct stateN1{
   Action ultimaOrdenColaborador;
 
   bool operator== (const stateN1 &x) const{
-    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c)  return true;
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador)  return true;
     else {return false;}
   }
 };
@@ -72,6 +72,7 @@ struct nodeN1{
     else if(st.jugador.f == b.st.jugador.f && st.jugador.c  == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f < b.st.colaborador.f){ return true;}
     else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c < b.st.colaborador.c){return true;}
     else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c == b.st.colaborador.c && st.colaborador.brujula < b.st.colaborador.brujula){return true;}
+    else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c == b.st.colaborador.c && st.colaborador.brujula ==  b.st.colaborador.brujula && st.ultimaOrdenColaborador < b.st.ultimaOrdenColaborador){return true;}
     else{ return false;}
 }
 };

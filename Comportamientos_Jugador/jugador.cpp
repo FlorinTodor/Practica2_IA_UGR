@@ -17,7 +17,7 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,co
 list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
 bool estaEnCampoVision(const stateN1 &st);
 stateN1 applyN1(const Action &a, const stateN1 &st, const vector<vector<unsigned char>> &mapa);
-bool SonambuloALaVista(ubicacion &jugador, ubicacion &sonambulo);
+bool ColaboradorALaVista(ubicacion &jugador, ubicacion &sonambulo);
 
 Action ComportamientoJugador::think(Sensores sensores)
 {
@@ -37,14 +37,13 @@ Action ComportamientoJugador::think(Sensores sensores)
 			c_state.colaborador.brujula = sensores.CLBsentido;
 			goal.f=sensores.destinoF;
 			goal.c=sensores.destinoC;
-				
+			c_stateN1.ultimaOrdenColaborador = act_CLB_STOP;
 			c_stateN1.jugador.f = sensores.posF;
 			c_stateN1.jugador.c = sensores.posC;
 			c_stateN1.jugador.brujula = sensores.sentido;
 			c_stateN1.colaborador.f = sensores.CLBposF;
 			c_stateN1.colaborador.c = sensores.CLBposC;
 			c_stateN1.colaborador.brujula = sensores.CLBsentido;
-			c_state.ultimaOrdenColaborador = act_CLB_STOP;
 			goal.f = sensores.destinoF;
 			goal.c = sensores.destinoC;
 
@@ -58,10 +57,9 @@ Action ComportamientoJugador::think(Sensores sensores)
 				break;
 			}
 			
-			if(plan.size() >0) {if(sensores.nivel == 1){VisualizaPlan(c_state,plan);}
-
+			if(plan.size() >0) {
+			VisualizaPlan(c_state,plan);
 			hayPlan=true;
-			
 			}
 		}
 
@@ -82,7 +80,6 @@ Action ComportamientoJugador::think(Sensores sensores)
 
 	// Incluir aquí el comportamiento del agente jugador
 
-	// plan = AnchuraSoloJugador(c_state, goal, mapaREsultado);
 
 }
 
@@ -444,8 +441,8 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 		explored.insert(current_node);
 
 		//Si no vemos al colaborador, solo generamos los del jugador
-		//if(SonambuloALaVista(current_node.st.jugador,current_node.st.colaborador))
-		if(estaEnCampoVision(current_node.st))
+		if(ColaboradorALaVista(current_node.st.jugador,current_node.st.colaborador))
+		//if(estaEnCampoVision(current_node.st))
 		{
 				//Si vemos al colaborador
 
@@ -453,6 +450,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 			//stateN1 prueba = child_clb_walk.st;
 			
 			child_clb_walk.st = applyN1(act_CLB_WALK, current_node.st, mapa);
+			
 
 			
 			if(child_clb_walk.st.colaborador.f == final.f 
@@ -470,10 +468,10 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 			}
 
 			
-
 				// Generar hijo act_CLB_TURN_SR
 				nodeN1 child_clb_turnsr = current_node;
 				child_clb_turnsr.st = applyN1(act_CLB_TURN_SR, current_node.st, mapa);
+				
 
 				if(explored.find(child_clb_turnsr) == explored.end())
 				{
@@ -485,6 +483,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 				// Generar hijo act_CLB_STOP
 				nodeN1 child_clb_stop = current_node;
 				child_clb_turnsr.st = applyN1(act_CLB_STOP, current_node.st, mapa);
+				
 
 				if(explored.find(child_clb_stop ) == explored.end())
 				{
@@ -492,47 +491,76 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					child_clb_stop .secuencia.push_back(act_CLB_STOP);
 					frontier.push_back(child_clb_stop );
 				}
+				
 
-			}
-
-
-		
-		if(!SolutionFound){
-			// Generar hijo actWALK
-			nodeN1 child_walk = current_node;
-			child_walk.st = applyN1(actWALK, current_node.st, mapa);
-			if (explored.find(child_walk) == explored.end())
-			{
-				child_walk.secuencia.push_back(actWALK);
-				frontier.push_back(child_walk);
-			}
-			// Generar hijo actTurn_L
-			nodeN1 child_turnl = current_node;
-			child_turnl.st = applyN1(actTURN_L, current_node.st, mapa);
-			if (explored.find(child_turnl) == explored.end())
-			{
-				child_turnl.secuencia.push_back(actTURN_L);
-				frontier.push_back(child_turnl);
-			}
-
-			// Generar hijo actTurn_R
-			nodeN1 child_turnsr = current_node;
-			child_turnsr.st = applyN1(actTURN_SR, current_node.st, mapa);
-			if (explored.find(child_turnsr) == explored.end())
-			{
-				child_turnsr.secuencia.push_back(actTURN_SR);
-				frontier.push_back(child_turnsr);
-			}
 		}
+
+			if(!SolutionFound){
+
+				// Generar hijo actIDLE
+				nodeN1 child_idle = current_node;
+				child_idle.st = applyN1(actIDLE, current_node.st, mapa);
+				
+				if (explored.find(child_idle)== explored.end())
+				{
+					child_idle.secuencia.push_back(actIDLE);
+					frontier.push_back(child_idle);
+				}
+
+			// Generar hijo actWALK
+				nodeN1 child_walk = current_node;
+				child_walk.st = applyN1(actWALK, current_node.st, mapa);
+				
+				if (explored.find(child_walk) == explored.end())
+				{
+					child_walk.secuencia.push_back(actWALK);
+					frontier.push_back(child_walk);
+				}
+
+				if(child_walk.st.colaborador.f == final.f 
+				and child_walk.st.colaborador.c == final.c)
+				{
+					
+					current_node = child_walk;
+					SolutionFound = true;
+				}    
+
+				
+
+				// Generar hijo actTurn_R
+				nodeN1 child_turnsr = current_node;
+				child_turnsr.st = applyN1(actTURN_SR, current_node.st, mapa);
+				
+				if (explored.find(child_turnsr) == explored.end())
+				{
+					child_turnsr.secuencia.push_back(actTURN_SR);
+					frontier.push_back(child_turnsr);
+				}
+				
+				// Generar hijo actTurn_L
+				nodeN1 child_turnl = current_node;
+				child_turnl.st = applyN1(actTURN_L, current_node.st, mapa);
+				
+				if (explored.find(child_turnl) == explored.end())
+				{
+					child_turnl.secuencia.push_back(actTURN_L);
+					frontier.push_back(child_turnl);
+				}
+
+				
+
+			}
+			
 
 		if(!SolutionFound and !frontier.empty()){
 			current_node = frontier.front();
 			while(!frontier.empty() and explored.find(current_node) != explored.end()){
-				frontier.pop_front();
-				if(!frontier.empty())
+					frontier.pop_front();
+					if(!frontier.empty())
 					current_node = frontier.front();
 			}
 		}
+		
 
 	}
 
@@ -544,7 +572,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 	return plan;
 }
 
-bool SonambuloALaVista(ubicacion &jugador, ubicacion &sonambulo)
+bool ColaboradorALaVista(ubicacion &jugador, ubicacion &sonambulo)
 {
 
 	switch(jugador.brujula){
