@@ -47,20 +47,12 @@ struct nodeN0{
 
 struct stateN1{
   ubicacion jugador;
-  ubicacion sonambulo;
+  ubicacion colaborador;
+  Action ultimaOrdenColaborador;
 
   bool operator== (const stateN1 &x) const{
-    if(jugador == x.jugador && sonambulo.f == x.sonambulo.f && sonambulo.c == x.sonambulo.c)  return true;
-    else return false;
-  }
-
-  bool operator<(const stateN1 &st) const{
-    return (jugador.f < st.jugador.f ||
-           (jugador.f == st.jugador.f && jugador.c < st.jugador.c) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f < st.sonambulo.f) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f == st.sonambulo.f && sonambulo.c < st.sonambulo.c) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && sonambulo.f == st.sonambulo.f && sonambulo.c == st.sonambulo.c && sonambulo.brujula < st.sonambulo.brujula));
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c)  return true;
+    else {return false;}
   }
 };
 
@@ -72,30 +64,24 @@ struct nodeN1{
     return (st == nd.st);
   }
 
-  bool operator<(const nodeN1 &nd) const
-    {
-        return (st < nd.st);
-    }
+  bool operator<(const nodeN1 &b) const{
+
+    if ( st.jugador.f < b.st.jugador.f){ return true;}
+    else if ( st.jugador.f == b.st.jugador.f && st.jugador.c <b.st.jugador.c){ return true;}
+    else if(st.jugador.f == b.st.jugador.f && st.jugador.c  == b.st.jugador.c && st.jugador.brujula < b.st.jugador.brujula) {return true;}
+    else if(st.jugador.f == b.st.jugador.f && st.jugador.c  == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f < b.st.colaborador.f){ return true;}
+    else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c < b.st.colaborador.c){return true;}
+    else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c == b.st.colaborador.c && st.colaborador.brujula < b.st.colaborador.brujula){return true;}
+    else{ return false;}
+}
 };
 
 
 class ComportamientoJugador : public Comportamiento {
   public:
     ComportamientoJugador(unsigned int size) : Comportamiento(size) {
-      /*
-      hayPlan = false;
-      c_state.jugador.f == 99;
-      c_state.jugador.c == 99;
-      c_state.jugador.brujula = norte;
-      c_state.colaborador.f = 99;
-      c_state.colaborador.c = 99;
-      c_state.colaborador.brujula = norte;
-      c_state.ultimaOrdenColaborador= actIDLE;
-      goal.brujula = norte;
-      goal.f = 99;
-      goal.c = 99;
-
-*/
+       hayPlan = false;
+       
     }
     ComportamientoJugador(std::vector< std::vector< unsigned char> > mapaR) : Comportamiento(mapaR) {
       // Inicializar Variables de Estado
@@ -108,7 +94,6 @@ class ComportamientoJugador : public Comportamiento {
     int interact(Action accion, int valor);
 
   void VisualizaPlan(const stateN0 &st, const list<Action> &plan);
-
 
   private:
     // Declarar Variables de Estado

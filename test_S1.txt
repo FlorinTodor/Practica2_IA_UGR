@@ -1,0 +1,8 @@
+Se agotaron los instantes de simulacion
+Instantes de simulacion no consumidos: 0
+Tiempo Consumido: 0.006199
+Nivel Final de Bateria: 3000
+Colisiones: 0
+Empujones: 0
+Porcentaje de mapa descubierto: 0
+Objetivos encontrados: (0) 0

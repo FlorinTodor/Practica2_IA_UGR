@@ -1,0 +1,17 @@
+Recibido un empujón por un lobo
+	El empujón ha sido efectivo
+Recibido un empujón por un lobo
+	El empujón ha sido efectivo
+Recibido un empujón por un lobo
+	El empujón ha sido efectivo
+Recibido un empujón por un lobo
+	El empujón ha sido efectivo
+Recibido un empujón por un lobo
+Se agotaron los instantes de simulacion
+Instantes de simulacion no consumidos: 0
+Tiempo Consumido: 0.006111
+Nivel Final de Bateria: 3000
+Colisiones: 5
+Empujones: 4
+Porcentaje de mapa descubierto: 0
+Objetivos encontrados: (0) 0

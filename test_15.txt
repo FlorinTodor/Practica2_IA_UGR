@@ -1,0 +1,5 @@
+Calculamos un nuevo plan
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+-----> Casilla Objetivo alcanzada por el colaborador
+Longitud del camino: 26

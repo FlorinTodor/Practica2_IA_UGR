@@ -1,0 +1,3 @@
+Calculamos un nuevo plan
+-----> Casilla Objetivo alcanzada por el colaborador
+Longitud del camino: 7

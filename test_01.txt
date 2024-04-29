@@ -1,0 +1,5 @@
+Calculamos un nuevo plan
+Plan encontrado: r r W R R R  (6 acciones)
+Se completó el plan
+-----> Casilla objetivo alcanzada por el jugador
+Longitud del camino: 5

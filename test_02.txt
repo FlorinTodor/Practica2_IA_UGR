@@ -1,0 +1,5 @@
+Calculamos un nuevo plan
+Plan encontrado: W R R R R R R r R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R R r R R R R R R R R R R R R R R  (54 acciones)
+Se completó el plan
+-----> Casilla objetivo alcanzada por el jugador
+Longitud del camino: 53
