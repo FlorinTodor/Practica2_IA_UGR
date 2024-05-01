@@ -1,4 +1,3750 @@
 Calculamos un nuevo plan
-Plan encontrado: r r W cr cW r R  (7 acciones)
------> Casilla Objetivo alcanzada por el colaborador
-Longitud del camino: 5
+Plan encontrado: r L cr cW I I  (6 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Envío de orden act_CLB_WALK al colaborador fuera de distancia
+Se completó el plan
+Calculamos un nuevo plan
+Plan encontrado: cr cW I I  (4 acciones)
+Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
+Se agotaron los instantes de simulacion
+Longitud del camino: 2999

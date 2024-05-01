@@ -1,5 +1,5 @@
 Calculamos un nuevo plan
-Plan encontrado: r r R cr cr cr r cW R R r W cr cW r R R cr cr cW cW  (21 acciones)
+Plan encontrado: r r R cr cr r r cW I W R R cr cW I R R cr cr cW cW  (21 acciones)
 Se completó el plan
 -----> Casilla Objetivo alcanzada por el colaborador
 Longitud del camino: 20

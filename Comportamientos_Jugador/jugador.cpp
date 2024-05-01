@@ -18,7 +18,9 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 stateN1 applyN1(const Action &a, const stateN1 &st, const vector<vector<unsigned char>> &mapa);
 
 
+
 /* METODOS DE BUSQUEDA DEL COLABORADOR*/
+bool VeoSonambulo(ubicacion j, ubicacion s, Orientacion & o);
 bool estaEnCampoVision(const stateN1 &st);
 
 Action ComportamientoJugador::think(Sensores sensores)
@@ -449,7 +451,8 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 		explored.insert(current_node);
 
 		
-		if(estaEnCampoVision(current_node.st))
+		if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula))
+		
 		{
 				//Si vemos al colaborador
 
@@ -486,7 +489,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 			}
 
 			
-				// Generar hijo act_CLB_TURN_SR
+			// Generar hijo act_CLB_TURN_SR
 				nodeN1 child_clb_turnsr = current_node;
 				child_clb_turnsr.st = applyN1(act_CLB_TURN_SR, current_node.st, mapa);
 				child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
@@ -515,12 +518,16 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					
 					frontier.push_back(child_idle);
 				}
+				else if (child_idle.st.colaborador.f == final.f and child_idle.st.colaborador.c == final.c){
+					current_node = child_idle;
+					SolutionFound = true;
+				}
 
 			// Generar hijo actWALK
 
 				
 
-
+			if(!SolutionFound){
 				nodeN1 child_walk = current_node;
 				child_walk.st = applyN1(actWALK, current_node.st, mapa);
 				child_walk.secuencia.push_back(actWALK);
@@ -538,9 +545,10 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					SolutionFound = true;
 				}    
 
-
+			}
 			// GENERAR HIJO ACTRUN
 
+				if(!SolutionFound){
 				nodeN1 child_run = current_node;
 				child_run.st = applyN1(actRUN, current_node.st, mapa);
 				child_run.secuencia.push_back(actRUN);
@@ -553,10 +561,11 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					current_node = child_run;
 					SolutionFound = true;
 				}
-				
+				}
 				
 				
 
+			if(!SolutionFound){
 				// Generar hijo actTurn_R
 				nodeN1 child_turnsr = current_node;
 				child_turnsr.st = applyN1(actTURN_SR, current_node.st, mapa);
@@ -567,7 +576,14 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					
 					frontier.push_back(child_turnsr);
 				}
-				
+
+				else if (child_turnsr.st.colaborador.f == final.f and child_turnsr.st.colaborador.c == final.c){
+					current_node = child_turnsr;
+					SolutionFound = true;
+				}
+			}
+
+			if(!SolutionFound){
 				// Generar hijo actTurn_L
 				nodeN1 child_turnl = current_node;
 				child_turnl.st = applyN1(actTURN_L, current_node.st, mapa);
@@ -578,8 +594,12 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					
 					frontier.push_back(child_turnl);
 				}
+				else if (child_turnl.st.colaborador.f == final.f and child_turnl.st.colaborador.c == final.c){
+					current_node = child_turnl;
+					SolutionFound = true;
+				}
 
-				
+			}
 
 			}
 			
@@ -604,9 +624,108 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 	return plan;
 }
 
+
+bool VeoSonambulo(ubicacion j, ubicacion s, Orientacion & o){
+
+  bool lo_veo = false;
+
+  switch(o){
+    case norte:
+
+      for(int k = 0; k < 3 and !lo_veo; k++){
+
+        if((s.f == j.f - 1) and (s.c == j.c - 1 + k)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 5 and !lo_veo; k++){
+        if((s.f == j.f - 2) and (s.c == j.c - 2 + k)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 7 and !lo_veo; k++){
+        if((s.f == j.f - 3) and (s.c == j.c - 3 + k)){
+          lo_veo = true;
+        }
+      }
+
+      break;
+    case sur:
+
+      for(int k = 0; k < 3 and !lo_veo; k++){
+
+        if((s.f == j.f + 1) and (s.c == j.c - 1 + k)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 5 and !lo_veo; k++){
+        if((s.f == j.f + 2) and (s.c == j.c - 2 + k)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 7 and !lo_veo; k++){
+        if((s.f == j.f + 3) and (s.c == j.c - 3 + k)){
+          lo_veo = true;
+        }
+      }
+
+      break;
+    case este:
+      for(int k = 0; k < 3 and !lo_veo; k++){
+
+        if((s.f == j.f - 1 + k) and (s.c == j.c + 1)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 5 and !lo_veo; k++){
+
+        if((s.f == j.f - 2 + k) and (s.c == j.c + 2)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 7 and !lo_veo; k++){
+
+        if((s.f == j.f - 3 + k) and (s.c == j.c + 3)){
+          lo_veo = true;
+        }
+      }
+      break;
+    case oeste:
+      for(int k = 0; k < 3 and !lo_veo; k++){
+
+        if((s.f == j.f - 1 + k) and (s.c == j.c - 1)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 5 and !lo_veo; k++){
+
+        if((s.f == j.f - 2 + k) and (s.c == j.c - 2)){
+          lo_veo = true;
+        }
+      }
+
+      for(int k = 0; k < 7 and !lo_veo; k++){
+
+        if((s.f == j.f - 3 + k) and (s.c == j.c - 3)){
+          lo_veo = true;
+        }
+      }
+      break;
+  }
+
+  return lo_veo;
+}
 bool estaEnCampoVision(const stateN1 &st)
 {
-	ubicacion ubicacion_colaborador = st.colaborador;
+
+ubicacion ubicacion_colaborador = st.colaborador;
 	ubicacion ubicacion_jugador = st.jugador;
 	stateN1 c_state = st;
 
@@ -711,7 +830,7 @@ bool estaEnCampoVision(const stateN1 &st)
 
 		case suroeste:
 
-			if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
+			if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >0))
 				presente = true;
 
 			else if (((ubicacion_colaborador.c == col - 1) ) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))

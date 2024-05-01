@@ -1,6 +1,6 @@
 Se agotaron los instantes de simulacion
 Instantes de simulacion no consumidos: 0
-Tiempo Consumido: 0.004803
+Tiempo Consumido: 0.005007
 Nivel Final de Bateria: 3000
 Colisiones: 0
 Empujones: 0
