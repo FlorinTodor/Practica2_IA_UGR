@@ -1,8 +1,5 @@
 Calculamos un nuevo plan
-Plan encontrado: L L W W W L W W W cW cr cr cr cr cr cW W r cr cr cr W L cW cW cW  (26 acciones)
-Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
-Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
-Envío de orden act_CLB_TURN_SR al colaborador fuera de distancia
-Envío de orden act_CLB_WALK al colaborador fuera de distancia
-Se cayó por un precipicio el colaborador
+Plan encontrado: L L W R L W R cW cr cr cr W L cW cW L cr r r W L cW L cW  (24 acciones)
+Se completó el plan
+-----> Casilla Objetivo alcanzada por el colaborador
 Longitud del camino: 23

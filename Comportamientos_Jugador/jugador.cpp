@@ -15,9 +15,11 @@ bool Find(const stateN0 &item, const list<stateN0> &lista);
 void PintaPlan(const list<Action> &plan);
 list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,const vector<vector<unsigned char>> &mapa);
 list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
-bool estaEnCampoVision(const stateN1 &st);
 stateN1 applyN1(const Action &a, const stateN1 &st, const vector<vector<unsigned char>> &mapa);
-bool ColaboradorALaVista(ubicacion &jugador, ubicacion &sonambulo);
+
+
+/* METODOS DE BUSQUEDA DEL COLABORADOR*/
+bool estaEnCampoVision(const stateN1 &st);
 
 Action ComportamientoJugador::think(Sensores sensores)
 {
@@ -35,8 +37,12 @@ Action ComportamientoJugador::think(Sensores sensores)
 			c_state.colaborador.f = sensores.CLBposF;
 			c_state.colaborador.c = sensores.CLBposC;
 			c_state.colaborador.brujula = sensores.CLBsentido;
+			c_state.ultimaOrdenColaborador = act_CLB_STOP;
 			goal.f=sensores.destinoF;
 			goal.c=sensores.destinoC;
+
+
+			
 			c_stateN1.ultimaOrdenColaborador = act_CLB_STOP;
 			c_stateN1.jugador.f = sensores.posF;
 			c_stateN1.jugador.c = sensores.posC;
@@ -249,7 +255,8 @@ stateN1 applyN1(const Action &action, const stateN1 &st, const vector<vector<uns
 
 			case act_CLB_WALK:
 				sig_ubicacion = NextCasilla(st.colaborador);
-				if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c)){
+				if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c))
+				{
 					st_result.colaborador = sig_ubicacion;
 					st_result.ultimaOrdenColaborador = act_CLB_WALK;
 				}
@@ -424,6 +431,7 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final, c
 	return plan;
 }
 
+
 list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa)
 {
 	nodeN1 current_node;
@@ -440,9 +448,8 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 		frontier.pop_front();
 		explored.insert(current_node);
 
-		//Si no vemos al colaborador, solo generamos los del jugador
-		if(ColaboradorALaVista(current_node.st.jugador,current_node.st.colaborador))
-		//if(estaEnCampoVision(current_node.st))
+		
+		if(estaEnCampoVision(current_node.st))
 		{
 				//Si vemos al colaborador
 
@@ -501,10 +508,11 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 				// Generar hijo actIDLE
 				nodeN1 child_idle = current_node;
 				child_idle.st = applyN1(actIDLE, current_node.st, mapa);
+				child_idle.secuencia.push_back(actIDLE);
 				
 				if (explored.find(child_idle)== explored.end())
 				{
-					child_idle.secuencia.push_back(actIDLE);
+					
 					frontier.push_back(child_idle);
 				}
 
@@ -523,7 +531,7 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 					frontier.push_back(child_walk);
 				}
 
-				if(child_walk.st.colaborador.f == final.f and child_walk.st.colaborador.c == final.c)
+				else if(child_walk.st.colaborador.f == final.f and child_walk.st.colaborador.c == final.c)
 				{
 					
 					current_node = child_walk;
@@ -596,418 +604,6 @@ list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, con
 	return plan;
 }
 
-bool ColaboradorALaVista(ubicacion &jugador, ubicacion &sonambulo)
-{
-
-	switch(jugador.brujula){
-		case norte:
-
-			if(jugador.c == sonambulo.c){
-				if((jugador.f-1) == sonambulo.f)	// posicion 2
-					return true;
-				if((jugador.f-2) == sonambulo.f)	// posicion 6
-					return true;
-				if((jugador.f-3) == sonambulo.f)	// posicion 12
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-1)){
-				if((jugador.f-1) == sonambulo.f)	// posicion 1
-					return true;
-				if((jugador.f-2) == sonambulo.f)	// posicion 5
-					return true;
-				if((jugador.f-3) == sonambulo.f)	// posicion 11
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-2)){
-				if((jugador.f-2) == sonambulo.f)	// posicion 4
-					return true;
-				if((jugador.f-3) == sonambulo.f)	// posicion 10
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-3)){
-				if((jugador.f-3) == sonambulo.f)	// posicion 9
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+1)){
-				if((jugador.f-1) == sonambulo.f)	// posicion 3
-					return true;
-				if((jugador.f-2) == sonambulo.f)	// posicion 7
-					return true;
-				if((jugador.f-3) == sonambulo.f)	// posicion 13
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+2)){
-				if((jugador.f-2) == sonambulo.f)	// posicion 8
-					return true;
-				if((jugador.f-3) == sonambulo.f)	// posicion 14
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+3)){
-				if((jugador.f-3) == sonambulo.f)	// posicion 15
-					return true;
-			}
-
-		break;
-
-		case noreste:
-			
-			if(jugador.f == sonambulo.f){
-				if((jugador.c+1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-1)){
-				if(jugador.c == sonambulo.c)		// posicion 1
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-2)){
-				if(jugador.c == sonambulo.c)		// posicion 4
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-3)){
-				if(jugador.c == sonambulo.c)		// posicion 9
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 10
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 11
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case este:
-
-			if(jugador.f == sonambulo.f){
-				if((jugador.c+1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-1)){
-				if((jugador.c+1) == sonambulo.c)	// posicion 1
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 11
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-2)){
-				if((jugador.c+2) == sonambulo.c)	// posicion 4
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 10
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-3)){
-				if((jugador.c+3) == sonambulo.c)	// posicion 9
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+1)){
-				if((jugador.c+1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+2)){
-				if((jugador.c+2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+3)){
-				if((jugador.c+3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-			
-		break;
-
-		case sureste:
-			
-			if(jugador.f == sonambulo.f){
-				if((jugador.c+1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+1)){
-				if(jugador.c == sonambulo.c)		// posicion 1
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+2)){
-				if(jugador.c == sonambulo.c)		// posicion 4
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+3)){
-				if(jugador.c == sonambulo.c)		// posicion 9
-					return true;
-				if((jugador.c+1) == sonambulo.c)	// posicion 10
-					return true;
-				if((jugador.c+2) == sonambulo.c)	// posicion 11
-					return true;
-				if((jugador.c+3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case sur:
-
-			if(jugador.c == sonambulo.c){
-				if((jugador.f+1) == sonambulo.f)	// posicion 2
-					return true;
-				if((jugador.f+2) == sonambulo.f)	// posicion 6
-					return true;
-				if((jugador.f+3) == sonambulo.f)	// posicion 12
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-1)){
-				if((jugador.f+1) == sonambulo.f)	// posicion 3
-					return true;
-				if((jugador.f+2) == sonambulo.f)	// posicion 7
-					return true;
-				if((jugador.f+3) == sonambulo.f)	// posicion 13
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-2)){
-				if((jugador.f+2) == sonambulo.f)	// posicion 8
-					return true;
-				if((jugador.f+3) == sonambulo.f)	// posicion 14
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c-3)){
-				if((jugador.f+3) == sonambulo.f)	// posicion 15
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+1)){
-				if((jugador.f+1) == sonambulo.f)	// posicion 1
-					return true;
-				if((jugador.f+2) == sonambulo.f)	// posicion 5
-					return true;
-				if((jugador.f+3) == sonambulo.f)	// posicion 11
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+2)){
-				if((jugador.f+2) == sonambulo.f)	// posicion 4
-					return true;
-				if((jugador.f+3) == sonambulo.f)	// posicion 10
-					return true;
-			}
-
-			if(jugador.c == (sonambulo.c+3)){
-				if((jugador.f+3) == sonambulo.f)	// posicion 9
-					return true;
-			}
-			
-		break;
-
-		case suroeste:
-			
-			if(jugador.f == sonambulo.f){
-				if((jugador.c-1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+1)){
-				if(jugador.c == sonambulo.c)		// posicion 1
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+2)){
-				if(jugador.c == sonambulo.c)		// posicion 4
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+3)){
-				if(jugador.c == sonambulo.c)		// posicion 9
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 10
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 11
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case oeste:
-
-			if(jugador.f == sonambulo.f){
-				if((jugador.c-1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-1)){
-				if((jugador.c-1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-2)){
-				if((jugador.c-2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-3)){
-				if((jugador.c-3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+1)){
-				if((jugador.c-1) == sonambulo.c)	// posicion 
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 11
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+2)){
-				if((jugador.c-2) == sonambulo.c)	// posicion 4
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 10
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f+3)){
-				if((jugador.c-3) == sonambulo.c)	// posicion 9
-					return true;
-			}
-			
-		break;
-		
-		case noroeste:
-			
-			if(jugador.f == sonambulo.f){
-				if((jugador.c-1) == sonambulo.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-1)){
-				if(jugador.c == sonambulo.c)		// posicion 1
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-2)){
-				if(jugador.c == sonambulo.c)		// posicion 4
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 5
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (sonambulo.f-3)){
-				if(jugador.c == sonambulo.c)		// posicion 9
-					return true;
-				if((jugador.c-1) == sonambulo.c)	// posicion 10
-					return true;
-				if((jugador.c-2) == sonambulo.c)	// posicion 11
-					return true;
-				if((jugador.c-3) == sonambulo.c)	// posicion 12
-					return true;
-			}
-
-		break;				
-
-	}
-
-	return false;
-}
 bool estaEnCampoVision(const stateN1 &st)
 {
 	ubicacion ubicacion_colaborador = st.colaborador;
@@ -1022,127 +618,152 @@ bool estaEnCampoVision(const stateN1 &st)
 
 	switch (orientacion_jugador)
 	{
-	case norte:
+		case norte:
+			if ((ubicacion_colaborador.c == col) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) > 0))
+				presente = true;
+
+			else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 1))
+				presente = true;
+
+			else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 2))
+				presente = true;
+
+			else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((fil - ubicacion_colaborador.f) == 3))
+				presente = true;
+
+			else
+				presente = false;
+		break;
+
+		case noreste:
+
+			if ((ubicacion_colaborador.c == col) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) > 0))
+				presente = true;
+
+			else if (( (ubicacion_colaborador.c == col + 1)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 1))
+				presente = true;
+
+			else if (( (ubicacion_colaborador.c == col + 2)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 2))
+				presente = true;
+
+			else if (( (ubicacion_colaborador.c == col + 3)) && ((fil - ubicacion_colaborador.f) == 3))
+				presente = true;
+
+			else
+				presente = false;
+			
+		break;
+
+		case noroeste:
+
 		if ((ubicacion_colaborador.c == col) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) > 0))
-			presente = true;
+				presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 1))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 1)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 1))
+				presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 2))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 2) ) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 2))
+				presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((fil - ubicacion_colaborador.f) == 3))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 3) ) && ((fil - ubicacion_colaborador.f) == 3))
+				presente = true;
 
-		else
-			presente = false;
+			else
+				presente = false;
 		break;
 		
-	case noroeste:
-        if (((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) > 0) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) > 0))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 1))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) >= 2))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((fil - ubicacion_colaborador.f) == 3))
-            presente = true;
-        else
-            presente = false;
-        break;
-	
-	case noreste:
-        if (((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) > 0) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 1) || (ubicacion_colaborador.f == fil + 1)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 1))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 2) || (ubicacion_colaborador.f == fil + 2)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 2))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 3) || (ubicacion_colaborador.f == fil + 3)) && ((ubicacion_colaborador.c - col) == 3))
-            presente = true;
-        else
-            presente = false;
-        break;
-	
-	case sur:
-		if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
-			presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))
-			presente = true;
+		case sur:
+			if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
+				presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 2))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))
+				presente = true;
 
-		else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((ubicacion_colaborador.f - fil) == 3))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 2))
+				presente = true;
 
-		else
-			presente = false;
+			else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((ubicacion_colaborador.f - fil) == 3))
+				presente = true;
+
+			else
+				presente = false;
+			break;
+
+		case sureste:
+
+			if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
+				presente = true;
+
+			else if (((ubicacion_colaborador.c == col + 1)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))
+				presente = true;
+
+			else if (( (ubicacion_colaborador.c == col + 2)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 2))
+				presente = true;
+
+			else if (((ubicacion_colaborador.c == col + 3)) && ((ubicacion_colaborador.f - fil) == 3))
+				presente = true;
+
+			else
+				presente = false;
+		
 		break;
 
-	
-	case suroeste:
-        if (((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) > 0) && ((fil - ubicacion_colaborador.f) <= 3) && ((fil - ubicacion_colaborador.f) > 0))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 1) || (ubicacion_colaborador.f == fil + 1)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 1))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 2) || (ubicacion_colaborador.f == fil + 2)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 2))
-            presente = true;
-        else if (((ubicacion_colaborador.f == fil - 3) || (ubicacion_colaborador.f == fil + 3)) && ((col - ubicacion_colaborador.c) == 3))
-            presente = true;
-        else
-            presente = false;
-        break;
-	case sureste:
-        if (((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) > 0) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 1) || (ubicacion_colaborador.c == col + 1)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 2) || (ubicacion_colaborador.c == col + 2)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 2))
-            presente = true;
-        else if (((ubicacion_colaborador.c == col - 3) || (ubicacion_colaborador.c == col + 3)) && ((ubicacion_colaborador.f - fil) == 3))
-            presente = true;
-        else
-            presente = false;
-        break;
-	case este:
-		if ((ubicacion_colaborador.f == fil) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) > 0))
-			presente = true;
+		case suroeste:
 
-		else if (((ubicacion_colaborador.f == fil + 1) || (ubicacion_colaborador.f == fil - 1)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 1))
-			presente = true;
+			if ((ubicacion_colaborador.c == col) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) > 0))
+				presente = true;
 
-		else if (((ubicacion_colaborador.f == fil + 2) || (ubicacion_colaborador.f == fil - 2)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 2))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 1) ) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 1))
+				presente = true;
 
-		else if (((ubicacion_colaborador.f == fil + 3) || (ubicacion_colaborador.f == fil - 3)) && ((ubicacion_colaborador.c - col) == 3))
-			presente = true;
+			else if (((ubicacion_colaborador.c == col - 2)) && ((ubicacion_colaborador.f - fil) <= 3) && ((ubicacion_colaborador.f - fil) >= 2))
+				presente = true;
 
-		else
-			presente = false;
+			else if (((ubicacion_colaborador.c == col - 3) ) && ((ubicacion_colaborador.f - fil) == 3))
+				presente = true;
+
+			else
+				presente = false;
 		break;
 
-	case oeste:
-		if ((ubicacion_colaborador.f == fil) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) > 0))
-			presente = true;
 
-		else if (((ubicacion_colaborador.f == fil - 1) || (ubicacion_colaborador.f == fil + 1)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 1))
-			presente = true;
+		case este:
+			if ((ubicacion_colaborador.f == fil) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) > 0))
+				presente = true;
 
-		else if (((ubicacion_colaborador.f == fil - 2) || (ubicacion_colaborador.f == fil + 2)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 2))
-			presente = true;
+			else if (((ubicacion_colaborador.f == fil + 1) || (ubicacion_colaborador.f == fil - 1)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 1))
+				presente = true;
 
-		else if (((ubicacion_colaborador.f == fil - 3) || (ubicacion_colaborador.f == fil + 3)) && ((col - ubicacion_colaborador.c) == 3))
-			presente = true;
+			else if (((ubicacion_colaborador.f == fil + 2) || (ubicacion_colaborador.f == fil - 2)) && ((ubicacion_colaborador.c - col) <= 3) && ((ubicacion_colaborador.c - col) >= 2))
+				presente = true;
 
-		else
-			presente = false;
-		break;
+			else if (((ubicacion_colaborador.f == fil + 3) || (ubicacion_colaborador.f == fil - 3)) && ((ubicacion_colaborador.c - col) == 3))
+				presente = true;
 
+			else
+				presente = false;
+			break;
+
+		case oeste:
+			if ((ubicacion_colaborador.f == fil) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) > 0))
+				presente = true;
+
+			else if (((ubicacion_colaborador.f == fil - 1) || (ubicacion_colaborador.f == fil + 1)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 1))
+				presente = true;
+
+			else if (((ubicacion_colaborador.f == fil - 2) || (ubicacion_colaborador.f == fil + 2)) && ((col - ubicacion_colaborador.c) <= 3) && ((col - ubicacion_colaborador.c) >= 2))
+				presente = true;
+
+			else if (((ubicacion_colaborador.f == fil - 3) || (ubicacion_colaborador.f == fil + 3)) && ((col - ubicacion_colaborador.c) == 3))
+				presente = true;
+
+			else
+				presente = false;
+			break;
 	
 	}
+
 	return presente;
 }
 
