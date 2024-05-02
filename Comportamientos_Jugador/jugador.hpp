@@ -27,6 +27,43 @@ struct stateN0{
 
 };
 
+
+
+struct stateN1{
+  ubicacion jugador;
+  ubicacion colaborador;
+  Action ultimaOrdenColaborador;
+
+  bool operator== (const stateN1 &x) const{
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador)  return true;
+    else {return false;}
+  }
+};
+
+struct stateN2{
+  ubicacion jugador;
+  ubicacion colaborador;
+  bool tiene_zapatillas, tiene_bikini;
+
+  bool operator== (const stateN2 &x) const{
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c)  return true;
+    else return false;
+  }
+
+  bool operator<(const stateN2 &st) const{
+    return (jugador.f < st.jugador.f ||
+           (jugador.f == st.jugador.f && jugador.c < st.jugador.c) || 
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas < st.tiene_zapatillas) ||
+           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini < st.tiene_bikini));
+  }
+
+
+
+
+};
+
+
 struct nodeN0{
   stateN0 st;
   list<Action> secuencia;
@@ -45,16 +82,6 @@ struct nodeN0{
   }
 };
 
-struct stateN1{
-  ubicacion jugador;
-  ubicacion colaborador;
-  Action ultimaOrdenColaborador;
-
-  bool operator== (const stateN1 &x) const{
-    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador)  return true;
-    else {return false;}
-  }
-};
 
 struct nodeN1{
   stateN1 st;
@@ -75,6 +102,24 @@ struct nodeN1{
     else if ( st.jugador.f == b.st.jugador.f && st.jugador.c == b.st.jugador.c && st.jugador.brujula == b.st.jugador.brujula && st.colaborador.f == b.st.colaborador.f &&  st.colaborador.c == b.st.colaborador.c && st.colaborador.brujula ==  b.st.colaborador.brujula && st.ultimaOrdenColaborador < b.st.ultimaOrdenColaborador){return true;}
     else{ return false;}
 }
+};
+
+struct nodeN2{
+  stateN2 st;
+  list<Action> secuencia;
+  int coste;
+
+  bool operator==(const nodeN2 &nd) const{
+    return (st == nd.st);
+  }
+
+  bool operator<(const nodeN2 &nd) const
+  {
+        if (coste > nd.coste) { return true;}
+        else{
+          return false;
+        }
+  }
 };
 
 
@@ -100,9 +145,12 @@ class ComportamientoJugador : public Comportamiento {
     // Declarar Variables de Estado
     list<Action> plan;
     bool hayPlan;
-    stateN0 c_state;
+   
     ubicacion goal;
+
+    stateN0 c_state;
     stateN1 c_stateN1;
+    stateN2 c_stateN2;
 
 
 

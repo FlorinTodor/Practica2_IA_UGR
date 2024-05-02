@@ -5,6 +5,7 @@
 #include <cmath>
 #include <set>
 #include <stack>
+#include <queue>
 
 // Este es el método principal que se piden en la practica.
 // Tiene como entrada la información de los sensores y devuelve la acción a realizar.
@@ -14,8 +15,11 @@ bool Find(const stateN0 &item, const list<nodeN0> &lista);
 bool Find(const stateN0 &item, const list<stateN0> &lista);
 void PintaPlan(const list<Action> &plan);
 list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final,const vector<vector<unsigned char>> &mapa);
-list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
+list<Action> AnchuraColaborador(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
+list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa);
 stateN1 applyN1(const Action &a, const stateN1 &st, const vector<vector<unsigned char>> &mapa);
+stateN2 applyN2(const Action &action, const stateN2 &st, int &coste, const vector<vector<unsigned char>> &mapa);
+
 
 
 
@@ -55,14 +59,23 @@ Action ComportamientoJugador::think(Sensores sensores)
 			goal.f = sensores.destinoF;
 			goal.c = sensores.destinoC;
 
-			
+			c_stateN2.jugador.f = sensores.posF;
+			c_stateN2.jugador.c = sensores.posC;
+			c_stateN2.jugador.brujula = sensores.sentido;
+			c_stateN2.colaborador.f = sensores.CLBposF;
+			c_stateN2.colaborador.c = sensores.CLBposC;
+			c_stateN2.colaborador.brujula = sensores.CLBsentido;
+			c_stateN2.tiene_bikini = false;
+			c_stateN2.tiene_zapatillas = false;
 		
 
 			switch(sensores.nivel){
 				case 0: plan = AnchuraSoloJugador(c_state,goal,mapaResultado);
 				break;
-				case 1: plan = AnchuraSonambulo(c_stateN1,goal,mapaResultado);
+				case 1: plan = AnchuraColaborador(c_stateN1,goal,mapaResultado);
 				break;
+
+				case 2: plan = costeUniforme(c_stateN2,goal,mapaResultado);
 			}
 			
 			if(plan.size() >0) {
@@ -277,6 +290,336 @@ stateN1 applyN1(const Action &action, const stateN1 &st, const vector<vector<uns
 }
 
 
+stateN2 applyN2(const Action &action, const stateN2 &st, int &coste, const vector<vector<unsigned char>> &mapa)
+{
+	stateN2 st_result = st;
+	ubicacion sig_ubicacion, sig_ubicacion2;
+	switch (action)
+	{
+	case actWALK: // si casilla delante es transitable y no está ocupada por el sonámbulo
+		sig_ubicacion = NextCasilla(st.jugador);
+		if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.colaborador.f && sig_ubicacion.c == st.colaborador.c))
+		{
+
+			if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
+			{
+				st_result.tiene_bikini = true;
+				if (st_result.tiene_zapatillas)
+					st_result.tiene_zapatillas = false;
+			}
+
+			else if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'D')
+			{
+				st_result.tiene_zapatillas = true;
+				if (st_result.tiene_bikini)
+					st_result.tiene_bikini = false;
+			}
+
+			// Actualiza el coste acumulado
+			switch (mapa[st.jugador.f][st.jugador.c])
+			{
+			case 'A':
+				if (!st.tiene_bikini)
+					coste += 100;
+				else
+					coste += 10;
+				break;
+
+			case 'B':
+				if (!st.tiene_zapatillas)
+					coste += 50;
+				else
+					coste += 15;
+				break;
+
+			case 'T':
+				coste += 2;
+				break;
+
+			default:
+				coste += 1;
+				break;
+			}
+			st_result.jugador = sig_ubicacion;
+		}
+
+		break;
+
+	case actRUN:
+
+		sig_ubicacion = NextCasilla(st.jugador);
+			if (CasillaTransitable(sig_ubicacion, mapa) and 
+				!(sig_ubicacion.f == st.colaborador.f and sig_ubicacion.c == st.colaborador.c)){
+					sig_ubicacion2 = NextCasilla(sig_ubicacion);
+					if (CasillaTransitable(sig_ubicacion2, mapa) and 
+						!(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c)){
+							st_result.jugador = sig_ubicacion2;
+					}
+				}
+
+
+			if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
+			{
+				st_result.tiene_bikini = true;
+				if (st_result.tiene_zapatillas)
+					st_result.tiene_zapatillas = false;
+			}
+
+			else if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'D')
+			{
+				st_result.tiene_zapatillas = true;
+				if (st_result.tiene_bikini)
+					st_result.tiene_bikini = false;
+			}
+
+		switch (mapa[st.jugador.f][st.jugador.c])
+		{
+
+		
+			
+			case 'A':
+				if (!st.tiene_bikini)
+					coste += 150;
+				else
+					coste += 15;
+				break;
+
+			case 'B':
+				if (!st.tiene_zapatillas)
+					coste += 75;
+				else
+					coste += 25;
+				break;
+
+			case 'T':
+				coste += 3;
+				break;
+
+			default:
+				coste += 1;
+				break;
+			
+			
+			st_result.jugador = sig_ubicacion;
+		}
+
+
+	break;
+
+
+	case actTURN_L:
+		st_result.jugador.brujula = static_cast<Orientacion>((st_result.jugador.brujula + 6) % 8);
+
+		switch (mapa[st.jugador.f][st.jugador.c])
+		{
+		case 'A':
+			if (!st.tiene_bikini)
+				coste += 30;
+			else
+				coste += 5;
+			break;
+
+		case 'B':
+			if (!st.tiene_zapatillas)
+				coste += 7;
+			else
+				coste += 1;
+			break;
+
+		case 'T':
+			coste += 2;
+			break;
+
+		default:
+			coste += 1;
+			break;
+		}
+
+		break;
+
+	case actTURN_SR:
+		st_result.jugador.brujula = static_cast<Orientacion>((st_result.jugador.brujula + 1) % 8);
+
+		switch (mapa[st.jugador.f][st.jugador.c])
+		{
+		case 'A':
+			if (!st.tiene_bikini)
+				coste += 10;
+			else
+				coste += 2;
+			break;
+
+		case 'B':
+			if (!st.tiene_zapatillas)
+				coste += 5;
+			else
+				coste += 1;
+			break;
+
+		case 'T':
+			coste += 1;
+			break;
+
+		default:
+			coste += 1;
+			break;
+		}
+
+		break;
+	case actIDLE:
+
+		st_result = st;
+
+	break;
+	}
+
+	
+	return st_result;
+}
+
+
+list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa)
+{
+	nodeN2 current_node;
+	priority_queue<nodeN2> frontier;
+	set<stateN2> explored;
+	list<Action> plan;
+	current_node.st = inicio;
+	current_node.coste = 0;
+
+	if (mapa[current_node.st.jugador.f][current_node.st.jugador.c] == 'K')
+		current_node.st.tiene_bikini = true;
+	if (mapa[current_node.st.jugador.f][current_node.st.jugador.c] == 'D')
+		current_node.st.tiene_zapatillas = true;
+
+	bool SolutionFound = (current_node.st.jugador.f == final.f && current_node.st.jugador.c == final.c);
+	frontier.push(current_node);
+
+	while (!frontier.empty() && !SolutionFound)
+	{
+		if (!frontier.empty())
+			frontier.pop();
+
+		if (explored.find(current_node.st) == explored.end())
+		{
+			explored.insert(current_node.st);
+
+			nodeN2 child_walk = current_node;
+			child_walk.st = applyN2(actWALK, current_node.st, child_walk.coste, mapa);
+			
+			if (explored.find(child_walk.st) == explored.end())
+			{
+				child_walk.secuencia.push_back(actWALK);
+				frontier.push(child_walk);
+			}
+			else if (child_walk.st.jugador.f == final.f && child_walk.st.jugador.c == final.c)
+			{
+				SolutionFound = true;
+				current_node = child_walk;
+			}
+
+			
+					// Generar hijo actRUN
+				nodeN2 child_run = current_node;
+				child_run.st = applyN2(actRUN, current_node.st,child_run.coste, mapa);
+				
+				
+				if (explored.find(child_run.st)== explored.end())
+				{
+					child_run.secuencia.push_back(actRUN);
+					frontier.push(child_run);
+				}
+				else if (child_run.st.jugador.f == final.f and child_run.st.jugador.c == final.c){
+					SolutionFound = true;
+					current_node = child_run;
+					
+				}
+
+
+			
+
+			if(!SolutionFound)
+			{
+					// Generar hijo actIDLE
+				nodeN2 child_idle = current_node;
+				child_idle.st = applyN2(actIDLE, current_node.st,child_idle.coste, mapa);
+				child_idle.secuencia.push_back(actIDLE);
+				
+				if (explored.find(child_idle.st)== explored.end())
+				{
+					
+					frontier.push(child_idle);
+				}
+				else if (child_idle.st.jugador.f == final.f and child_idle.st.jugador.c == final.c){
+					current_node = child_idle;
+					SolutionFound = true;
+				}
+
+
+			}
+			if (!SolutionFound)
+			{
+
+				// Genera hijo actTURN_L
+				nodeN2 child_turnl = current_node;
+				child_turnl.st = applyN2(actTURN_L, current_node.st, child_turnl.coste, mapa);
+				child_turnl.secuencia.push_back(actTURN_L);
+				if (explored.find(child_turnl.st) == explored.end())
+				{
+					
+					frontier.push(child_turnl);
+				}
+				else if (child_turnl.st.jugador.f == final.f and child_turnl.st.jugador.c == final.c){
+					current_node = child_turnl;
+					SolutionFound = true;
+				}
+
+				// Genera hijo actTURN_SR
+				nodeN2 child_turnsr = current_node;
+				child_turnsr.st = applyN2(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
+				child_turnsr.secuencia.push_back(actTURN_SR);
+				if (explored.find(child_turnsr.st) == explored.end())
+				{
+					
+					frontier.push(child_turnsr);
+				}
+				else if (child_turnsr.st.jugador.f == final.f and child_turnsr.st.jugador.c == final.c){
+					current_node = child_turnsr;
+					SolutionFound = true;
+				}
+			}
+		}
+
+
+
+		if (!SolutionFound)
+		{
+			current_node = frontier.top();
+
+			if (current_node.st.jugador.f == final.f && current_node.st.jugador.c == final.c)
+				SolutionFound = true;
+		}
+
+
+
+	}
+
+	if (SolutionFound){
+		plan = current_node.secuencia;
+		
+		cout<<"Coste Total: "<<current_node.coste<<endl;
+		cout<< "TAM  de Frontier: "<<frontier.size()<<endl;
+		cout<< "TAM  de Explored: "<<explored.size()<<endl;
+		cout << "Plan encontrado: ";
+		PintaPlan(current_node.secuencia);}
+
+
+	return plan;
+}
+
+
+
+
 
 /** pone a cero todos los elementos de una matriz */
 void AnulaMatriz(vector<vector<unsigned char> > &matriz){
@@ -424,7 +767,7 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final, c
 	}
 	
 
-	if(SolutionFound){
+	if(SolutionFound){	
 		plan = current_node.secuencia;
 		cout << "Plan encontrado: ";
 		PintaPlan(current_node.secuencia);
@@ -434,7 +777,7 @@ list<Action> AnchuraSoloJugador(const stateN0 &inicio, const ubicacion &final, c
 }
 
 
-list<Action> AnchuraSonambulo(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa)
+list<Action> AnchuraColaborador(const stateN1 &inicio, const ubicacion &final, const vector<vector<unsigned char>> &mapa)
 {
 	nodeN1 current_node;
 	list<nodeN1> frontier;

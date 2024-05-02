@@ -1,6 +1,5 @@
 Calculamos un nuevo plan
-Plan encontrado: L L W R cr cr cr cr cr cW I I I L R R R R R r cW  (21 acciones)
+Plan encontrado: L L W R cr cr cr cr cr cW I I I L W R R R R R cW  (21 acciones)
 Se completó el plan
-Envío de orden act_CLB_WALK al colaborador fuera de distancia
 -----> Casilla Objetivo alcanzada por el colaborador
 Longitud del camino: 20
