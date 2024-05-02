@@ -51,17 +51,47 @@ struct stateN2{
   }
 
   bool operator<(const stateN2 &st) const{
-    return (jugador.f < st.jugador.f ||
-           (jugador.f == st.jugador.f && jugador.c < st.jugador.c) || 
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas < st.tiene_zapatillas) ||
-           (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini < st.tiene_bikini));
+    
+      if(jugador.f < st.jugador.f){ return true;}
+          else if (jugador.f == st.jugador.f && jugador.c < st.jugador.c) { return true;}
+          else if  (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas < st.tiene_zapatillas) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini < st.tiene_bikini){ return true;}
+      else{
+          return false;
+          }
+  }
+};
+
+struct stateN3{
+  ubicacion jugador;
+  ubicacion colaborador;
+  Action ultimaOrdenColaborador;
+  bool tiene_zapatillas, tiene_bikini, tiene_zapatillas_colaborador, tiene_bikini_colaborador;
+
+  bool operator== (const stateN3 &x) const{
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c)  return true;
+    else return false;
   }
 
-
-
-
+  bool operator<(const stateN3 &st) const{
+        if(jugador.f < st.jugador.f) { return true;}
+          else if  (jugador.f == st.jugador.f && jugador.c < st.jugador.c){ return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f < st.colaborador.f) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c < st.colaborador.c) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula < st.colaborador.brujula) { return true;}
+          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini < st.tiene_bikini) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas < st.tiene_zapatillas) { return true;}
+          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador < st.tiene_bikini_colaborador) { return true;}
+          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador == st.tiene_bikini_colaborador && tiene_zapatillas_colaborador < st.tiene_zapatillas_colaborador) { return true;}
+          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador == st.tiene_bikini_colaborador && tiene_zapatillas_colaborador == st.tiene_zapatillas_colaborador && ultimaOrdenColaborador < st.ultimaOrdenColaborador){ return true;}
+        else{ return false;}
+  }
+  
 };
+
+
 
 
 struct nodeN0{
@@ -122,6 +152,22 @@ struct nodeN2{
   }
 };
 
+struct nodeN3{
+  stateN3 st;
+  list<Action> secuencia;
+  int coste;
+  int heuristica;
+  int total;
+
+  bool operator==(const nodeN3 &nd) const{
+    return (st == nd.st);
+  }
+
+  bool operator<(const nodeN3 &nd) const
+    {
+        return (total > nd.total);
+    }
+};
 
 class ComportamientoJugador : public Comportamiento {
   public:
@@ -151,6 +197,7 @@ class ComportamientoJugador : public Comportamiento {
     stateN0 c_state;
     stateN1 c_stateN1;
     stateN2 c_stateN2;
+    stateN3 c_stateN3;
 
 
 
