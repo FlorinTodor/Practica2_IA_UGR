@@ -504,6 +504,23 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 		{
 			explored.insert(current_node.st);
 
+
+			// Generar hijo actIDLE
+				nodeN2 child_idle = current_node;
+				child_idle.st = applyN2(actIDLE, current_node.st,child_idle.coste, mapa);
+				child_idle.secuencia.push_back(actIDLE);
+				
+				if (explored.find(child_idle.st)== explored.end())
+				{
+					
+					frontier.push(child_idle);
+				}
+				 if (child_idle.st.jugador.f == final.f and child_idle.st.jugador.c == final.c){
+					current_node = child_idle;
+					SolutionFound = true;
+				}
+
+				
 			nodeN2 child_walk = current_node;
 			child_walk.st = applyN2(actWALK, current_node.st, child_walk.coste, mapa);
 			
@@ -512,7 +529,8 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 				child_walk.secuencia.push_back(actWALK);
 				frontier.push(child_walk);
 			}
-			else if (child_walk.st.jugador.f == final.f && child_walk.st.jugador.c == final.c)
+
+			 if (child_walk.st.jugador.f == final.f && child_walk.st.jugador.c == final.c)
 			{
 				SolutionFound = true;
 				current_node = child_walk;
@@ -529,50 +547,16 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 					child_run.secuencia.push_back(actRUN);
 					frontier.push(child_run);
 				}
-				else if (child_run.st.jugador.f == final.f and child_run.st.jugador.c == final.c){
+				 if (child_run.st.jugador.f == final.f and child_run.st.jugador.c == final.c){
 					SolutionFound = true;
 					current_node = child_run;
 					
 				}
 
 
-			
-
-			if(!SolutionFound)
-			{
-					// Generar hijo actIDLE
-				nodeN2 child_idle = current_node;
-				child_idle.st = applyN2(actIDLE, current_node.st,child_idle.coste, mapa);
-				child_idle.secuencia.push_back(actIDLE);
-				
-				if (explored.find(child_idle.st)== explored.end())
-				{
-					
-					frontier.push(child_idle);
-				}
-				else if (child_idle.st.jugador.f == final.f and child_idle.st.jugador.c == final.c){
-					current_node = child_idle;
-					SolutionFound = true;
-				}
-
-
-			}
+		
 			if (!SolutionFound)
 			{
-
-				// Genera hijo actTURN_L
-				nodeN2 child_turnl = current_node;
-				child_turnl.st = applyN2(actTURN_L, current_node.st, child_turnl.coste, mapa);
-				child_turnl.secuencia.push_back(actTURN_L);
-				if (explored.find(child_turnl.st) == explored.end())
-				{
-					
-					frontier.push(child_turnl);
-				}
-				else if (child_turnl.st.jugador.f == final.f and child_turnl.st.jugador.c == final.c){
-					current_node = child_turnl;
-					SolutionFound = true;
-				}
 
 				// Genera hijo actTURN_SR
 				nodeN2 child_turnsr = current_node;
@@ -583,10 +567,26 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 					
 					frontier.push(child_turnsr);
 				}
-				else if (child_turnsr.st.jugador.f == final.f and child_turnsr.st.jugador.c == final.c){
+				 if (child_turnsr.st.jugador.f == final.f and child_turnsr.st.jugador.c == final.c){
 					current_node = child_turnsr;
 					SolutionFound = true;
 				}
+
+				// Genera hijo actTURN_L
+				nodeN2 child_turnl = current_node;
+				child_turnl.st = applyN2(actTURN_L, current_node.st, child_turnl.coste, mapa);
+				child_turnl.secuencia.push_back(actTURN_L);
+				if (explored.find(child_turnl.st) == explored.end())
+				{
+					
+					frontier.push(child_turnl);
+				}
+				 if (child_turnl.st.jugador.f == final.f and child_turnl.st.jugador.c == final.c){
+					current_node = child_turnl;
+					SolutionFound = true;
+				}
+
+				
 			}
 		}
 
