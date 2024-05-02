@@ -1,40 +1,7 @@
 Calculamos un nuevo plan
-Coste Total: 137
-TAM  de Frontier: 28765
-TAM  de Explored: 84109
-Plan encontrado: L R L W L L W R W R R R R R L r R R L r R r R R R r R R R r R R W R W R r W L r R R R R L R R W R R R R R R W L R r r R R L R R L W r R W r R  (71 acciones)
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-El jugador ha chocado con un muro
-Se completó el plan
-El jugador ha chocado con un muro
-Calculamos un nuevo plan
+Coste Total: 155
+TAM  de Frontier: 25996
+TAM  de Explored: 95907
+Plan encontrado: L R L W L L W R R W R R L R R W r R R R W r W R R R R R R r R R R r L W r R W r R r L R R R R L W R R R R R R R R R R L R r R r L W R L W r R W r R I  (75 acciones)
+-----> Casilla objetivo alcanzada por el jugador
+Coste de Bateria: 155

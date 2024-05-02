@@ -1,5 +1,7 @@
 Calculamos un nuevo plan
-Plan encontrado: W W W  (3 acciones)
-Se completó el plan
+Coste Total: 5
+TAM  de Frontier: 50
+TAM  de Explored: 20
+Plan encontrado: W R I  (3 acciones)
 -----> Casilla objetivo alcanzada por el jugador
-Coste de Bateria: 6
+Coste de Bateria: 5

@@ -928,7 +928,7 @@ list<Action> AnchuraColaborador(const stateN1 &inicio, const ubicacion &final, c
 				
 
 			if(!SolutionFound){
-				// Generar hijo actTurn_R
+				// Generar hijo actTurn_SR
 				nodeN1 child_turnsr = current_node;
 				child_turnsr.st = applyN1(actTURN_SR, current_node.st, mapa);
 				child_turnsr.secuencia.push_back(actTURN_SR);
@@ -1209,7 +1209,7 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 			st_result.jugador = sig_ubicacion;
 		}
 
-		break;
+	break;
 
 	case actRUN:
 
@@ -1220,9 +1220,6 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 					if (CasillaTransitable(sig_ubicacion2, mapa) and 
 						!(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c)){
 							st_result.jugador = sig_ubicacion2;
-
-
-
 
 							if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'K')
 							{
@@ -1336,7 +1333,8 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 			break;
 		}
 
-		break;
+	break;
+
 	case actIDLE:
 
 		st_result = st;
@@ -1551,84 +1549,171 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 
 	while (!frontier.empty() && !SolutionFound)
 	{
-		if (!frontier.empty())
 			frontier.pop();
 
-		if (explored.find(current_node.st) == explored.end())
-		{
 			explored.insert(current_node.st);
 
-			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula)){
+			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula))
+			{
+
+
+				// Generar hijo act_CLB_STOP
+				nodeN3 child_clb_stop = current_node;
+				child_clb_stop.st = applyN3(act_CLB_STOP, current_node.st, child_clb_stop.coste, mapa);
+				child_clb_stop.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
+				child_clb_stop.total = child_clb_stop.heuristica + child_clb_stop.coste;
+				child_clb_stop.secuencia.push_back(act_CLB_STOP);
+
+				if(explored.find(child_clb_stop.st ) == explored.end())
+				{
+					// Añadir hijo a la lista de nodos por explorar
+					
+					frontier.push(child_clb_stop );
+				}
+
+
+				// Generar hijo act_CLB_WALK
 				nodeN3 child_clb_walk = current_node;
 				child_clb_walk.st = applyN3(act_CLB_WALK, current_node.st, child_clb_walk.coste, mapa);
 				child_clb_walk.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
 				child_clb_walk.total = child_clb_walk.heuristica + child_clb_walk.coste;
+				child_clb_walk.secuencia.push_back(act_CLB_WALK);
 				
-				if(explored.find(child_clb_walk.st) == explored.end()){
-					child_clb_walk.secuencia.push_back(act_CLB_WALK);
+				if(child_clb_walk.st.colaborador.f == final.f 
+				and child_clb_walk.st.colaborador.c == final.c)
+				{
+					
+					current_node = child_clb_walk;
+					SolutionFound = true;
+				}    
+				else if(explored.find(child_clb_walk.st) == explored.end()){
+					
 					frontier.push(child_clb_walk);
 				}
-			}
-			
-			nodeN3 child_walk = current_node;
-			child_walk.st = applyN3(actWALK, current_node.st, child_walk.coste, mapa);
-			child_walk.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
-			child_walk.total = child_walk.heuristica + child_walk.coste;
-			
-			if (explored.find(child_walk.st) == explored.end())
-			{
-				child_walk.secuencia.push_back(actWALK);
-				frontier.push(child_walk);
-			}
-			
 
-			if (!SolutionFound)
-			{
-				if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula)){
-					
-
-					//Genera hijo atc_CLB_TURN_SR
+				//Genera hijo atc_CLB_TURN_SR
 					nodeN3 child_clb_turnsr = current_node;
 					child_clb_turnsr.st = applyN3(act_CLB_TURN_SR, current_node.st, child_clb_turnsr.coste, mapa);
 					child_clb_turnsr.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
 					child_clb_turnsr.total = child_clb_turnsr.heuristica + child_clb_turnsr.coste;
-					
+					child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+
 					if(explored.find(child_clb_turnsr.st) == explored.end()){
-						child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+						
 						frontier.push(child_clb_turnsr);
 					}
-				}
-				// Genera hijo actTURN_L
-				nodeN3 child_turnl = current_node;
-				child_turnl.st = applyN3(actTURN_L, current_node.st, child_turnl.coste, mapa);
-				child_turnl.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
-				child_turnl.total = child_turnl.heuristica + child_turnl.coste;
+			}
 
-				if (explored.find(child_turnl.st) == explored.end())
+
+			if (!SolutionFound)
+			{
+				
+				// Generar hijo actIDLE
+				nodeN3 child_idle = current_node;
+				child_idle.st = applyN3(actIDLE, current_node.st, child_idle.coste,mapa);
+				child_idle.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+				child_idle.total = child_idle.heuristica + child_idle.coste;
+				child_idle.secuencia.push_back(actIDLE);
+				
+				if (explored.find(child_idle.st)== explored.end())
 				{
+					
+					frontier.push(child_idle);
+				}
+				else if (child_idle.st.colaborador.f == final.f and child_idle.st.colaborador.c == final.c){
+					current_node = child_idle;
+					SolutionFound = true;
+				}
+
+				//GENERAR HIJO ACT_WALK
+
+				if(!SolutionFound){
+					nodeN3 child_walk = current_node;
+					child_walk.st = applyN3(actWALK, current_node.st, child_walk.coste, mapa);
+					child_walk.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_walk.total = child_walk.heuristica + child_walk.coste;
+					child_walk.secuencia.push_back(actWALK);
+					
+					if (explored.find(child_walk.st)== explored.end())
+					{
+						
+						frontier.push(child_walk);
+					}
+					
+					else if(child_walk.st.colaborador.f == final.f and child_walk.st.colaborador.c == final.c)
+					{
+						
+						current_node = child_walk;
+						SolutionFound = true;
+					}  
+				}
+
+				// GENERAR HIJO ACTRUN
+
+				if(!SolutionFound){
+					nodeN3 child_run = current_node;
+					child_run.st = applyN3(actRUN, current_node.st,child_run.coste, mapa);
+					child_run.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_run.total = child_run.heuristica + child_run.coste;
+					child_run.secuencia.push_back(actRUN);
+
+					if (explored.find(child_run.st) == explored.end()){
+						
+						frontier.push(child_run);
+					}
+					else if (child_run.st.colaborador.f == final.f and child_run.st.colaborador.c == final.c){
+						current_node = child_run;
+						SolutionFound = true;
+					}
+
+				}
+
+				if(!SolutionFound){
+					// Genera hijo actTURN_SR
+					nodeN3 child_turnsr = current_node;
+					child_turnsr.st = applyN3(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
+					child_turnsr.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_turnsr.total = child_turnsr.heuristica + child_turnsr.coste;
+					child_turnsr.secuencia.push_back(actTURN_SR);
+					if (explored.find(child_turnsr.st) == explored.end())
+					{
+						
+						frontier.push(child_turnsr);
+					}
+
+					else if (child_turnsr.st.colaborador.f == final.f and child_turnsr.st.colaborador.c == final.c){
+					current_node = child_turnsr;
+					SolutionFound = true;
+					}
+
+					// Genera hijo actTURN_L
+					nodeN3 child_turnl = current_node;
+					child_turnl.st = applyN3(actTURN_L, current_node.st, child_turnl.coste, mapa);
+					child_turnl.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_turnl.total = child_turnl.heuristica + child_turnl.coste;
 					child_turnl.secuencia.push_back(actTURN_L);
-					frontier.push(child_turnl);
-				}
 
-				// Genera hijo actTURN_SR
-				nodeN3 child_tursr = current_node;
-				child_tursr.st = applyN3(actTURN_SR, current_node.st, child_tursr.coste, mapa);
-				child_tursr.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
-				child_tursr.total = child_tursr.heuristica + child_tursr.coste;
+					if (explored.find(child_turnl.st) == explored.end())
+					{
+						
+						frontier.push(child_turnl);
+					}
+					else if (child_turnl.st.colaborador.f == final.f and child_turnl.st.colaborador.c == final.c){
+					current_node = child_turnl;
+					SolutionFound = true;
+					}
 
-				if (explored.find(child_tursr.st) == explored.end())
-				{
-					child_tursr.secuencia.push_back(actTURN_SR);
-					frontier.push(child_tursr);
+					
 				}
 			}
-		}
-		if (!SolutionFound)
-		{
-			current_node = frontier.top();
-
-			if (current_node.st.colaborador.f == final.f && current_node.st.colaborador.c == final.c)
-				SolutionFound = true;
+		
+		if(!frontier.empty() and !SolutionFound){
+			current_node = frontier.top();	
+			while(!frontier.empty() and explored.find(current_node.st) != explored.end()){
+				frontier.pop();
+				if(!frontier.empty())
+					current_node = frontier.top();
+			}
 		}
 	}
 

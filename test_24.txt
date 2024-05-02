@@ -1,5 +1,8 @@
 Calculamos un nuevo plan
-Plan encontrado: L r W L W W W r W r W W W W W W W W W W W L W W W W W W W W W W W W W W W W L W r W L r W r L W r W L r W W r W W W W W r W W W W W W W W W W W W W W W W W W r W W W W r W W W W r W W W L W W W r W W W W W W W W W r W W L W W W W r r W L W W W W W W W W r W W L r W L W r W r W r r W  (142 acciones)
+Coste Total: 71
+TAM  de Frontier: 26910
+TAM  de Explored: 64209
+Plan encontrado: L L R W r R R R R R W r R R R R r L R W L R r R R R R R R r R R R W r R R W R R R R R R R R r W L R R R R R R L r W r W r r W  (63 acciones)
 Se completó el plan
 -----> Casilla objetivo alcanzada por el jugador
-Coste de Bateria: 147
+Coste de Bateria: 70
