@@ -354,23 +354,28 @@ stateN2 applyN2(const Action &action, const stateN2 &st, int &coste, const vecto
 					if (CasillaTransitable(sig_ubicacion2, mapa) and 
 						!(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c)){
 							st_result.jugador = sig_ubicacion2;
+
+
+
+
+							if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'K')
+							{
+								st_result.tiene_bikini = true;
+								if (st_result.tiene_zapatillas)
+									st_result.tiene_zapatillas = false;
+							}
+
+							else if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'D')
+							{
+								st_result.tiene_zapatillas = true;
+								if (st_result.tiene_bikini)
+									st_result.tiene_bikini = false;
+							}
 					}
 				}
 
 
-			if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
-			{
-				st_result.tiene_bikini = true;
-				if (st_result.tiene_zapatillas)
-					st_result.tiene_zapatillas = false;
-			}
-
-			else if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'D')
-			{
-				st_result.tiene_zapatillas = true;
-				if (st_result.tiene_bikini)
-					st_result.tiene_bikini = false;
-			}
+			
 
 		switch (mapa[st.jugador.f][st.jugador.c])
 		{
@@ -497,30 +502,10 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 
 	while (!frontier.empty() && !SolutionFound)
 	{
-		if (!frontier.empty())
 			frontier.pop();
 
-		if (explored.find(current_node.st) == explored.end())
-		{
 			explored.insert(current_node.st);
 
-
-			// Generar hijo actIDLE
-				nodeN2 child_idle = current_node;
-				child_idle.st = applyN2(actIDLE, current_node.st,child_idle.coste, mapa);
-				child_idle.secuencia.push_back(actIDLE);
-				
-				if (explored.find(child_idle.st)== explored.end())
-				{
-					
-					frontier.push(child_idle);
-				}
-				 if (child_idle.st.jugador.f == final.f and child_idle.st.jugador.c == final.c){
-					current_node = child_idle;
-					SolutionFound = true;
-				}
-
-				
 			nodeN2 child_walk = current_node;
 			child_walk.st = applyN2(actWALK, current_node.st, child_walk.coste, mapa);
 			
@@ -529,8 +514,7 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 				child_walk.secuencia.push_back(actWALK);
 				frontier.push(child_walk);
 			}
-
-			 if (child_walk.st.jugador.f == final.f && child_walk.st.jugador.c == final.c)
+			else if (child_walk.st.jugador.f == final.f && child_walk.st.jugador.c == final.c)
 			{
 				SolutionFound = true;
 				current_node = child_walk;
@@ -547,30 +531,36 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 					child_run.secuencia.push_back(actRUN);
 					frontier.push(child_run);
 				}
-				 if (child_run.st.jugador.f == final.f and child_run.st.jugador.c == final.c){
+				else if (child_run.st.jugador.f == final.f and child_run.st.jugador.c == final.c){
 					SolutionFound = true;
 					current_node = child_run;
 					
 				}
 
 
-		
-			if (!SolutionFound)
-			{
+			
 
-				// Genera hijo actTURN_SR
-				nodeN2 child_turnsr = current_node;
-				child_turnsr.st = applyN2(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
-				child_turnsr.secuencia.push_back(actTURN_SR);
-				if (explored.find(child_turnsr.st) == explored.end())
+			if(!SolutionFound)
+			{
+					// Generar hijo actIDLE
+				nodeN2 child_idle = current_node;
+				child_idle.st = applyN2(actIDLE, current_node.st,child_idle.coste, mapa);
+				child_idle.secuencia.push_back(actIDLE);
+				
+				if (explored.find(child_idle.st)== explored.end())
 				{
 					
-					frontier.push(child_turnsr);
+					frontier.push(child_idle);
 				}
-				 if (child_turnsr.st.jugador.f == final.f and child_turnsr.st.jugador.c == final.c){
-					current_node = child_turnsr;
+				else if (child_idle.st.jugador.f == final.f and child_idle.st.jugador.c == final.c){
+					current_node = child_idle;
 					SolutionFound = true;
 				}
+
+
+			}
+			if (!SolutionFound)
+			{
 
 				// Genera hijo actTURN_L
 				nodeN2 child_turnl = current_node;
@@ -581,23 +571,36 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 					
 					frontier.push(child_turnl);
 				}
-				 if (child_turnl.st.jugador.f == final.f and child_turnl.st.jugador.c == final.c){
+				else if (child_turnl.st.jugador.f == final.f and child_turnl.st.jugador.c == final.c){
 					current_node = child_turnl;
 					SolutionFound = true;
 				}
 
-				
+				// Genera hijo actTURN_SR
+				nodeN2 child_turnsr = current_node;
+				child_turnsr.st = applyN2(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
+				child_turnsr.secuencia.push_back(actTURN_SR);
+				if (explored.find(child_turnsr.st) == explored.end())
+				{
+					
+					frontier.push(child_turnsr);
+				}
+				else if (child_turnsr.st.jugador.f == final.f and child_turnsr.st.jugador.c == final.c){
+					current_node = child_turnsr;
+					SolutionFound = true;
+				}
 			}
-		}
+		
 
 
 
-		if (!SolutionFound)
-		{
-			current_node = frontier.top();
-
-			if (current_node.st.jugador.f == final.f && current_node.st.jugador.c == final.c)
-				SolutionFound = true;
+		if(!frontier.empty() and !SolutionFound){
+			current_node = frontier.top();	
+			while(!frontier.empty() and explored.find(current_node.st) != explored.end()){
+				frontier.pop();
+				if(!frontier.empty())
+					current_node = frontier.top();
+			}
 		}
 
 
