@@ -165,7 +165,7 @@ struct nodeN3{
   }
 
   bool operator<(const nodeN3 &nd) const{
-    if (coste > nd.coste) { return true;}
+    if (total > nd.total) { return true;}
         else{
           return false;
     }
