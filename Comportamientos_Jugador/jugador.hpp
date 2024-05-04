@@ -38,6 +38,7 @@ struct stateN1{
     if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador)  return true;
     else {return false;}
   }
+  
 };
 
 struct stateN2{
@@ -70,23 +71,23 @@ struct stateN3{
   bool tiene_zapatillas, tiene_bikini, tiene_zapatillas_colaborador, tiene_bikini_colaborador;
 
   bool operator== (const stateN3 &x) const{
-    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c)  return true;
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador && (tiene_bikini == x.tiene_bikini or tiene_zapatillas && x.tiene_zapatillas) && (tiene_bikini_colaborador == x.tiene_bikini_colaborador  && tiene_zapatillas_colaborador == x.tiene_zapatillas_colaborador))  return true;
     else return false;
   }
 
   bool operator<(const stateN3 &st) const{
-        if(jugador.f < st.jugador.f) { return true;}
-          else if  (jugador.f == st.jugador.f && jugador.c < st.jugador.c){ return true;}
+          if(jugador.f < st.jugador.f){ return true;}
+          else if (jugador.f == st.jugador.f && jugador.c < st.jugador.c) { return true;}
           else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula < st.jugador.brujula) { return true;}
-          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f < st.colaborador.f) { return true;}
-          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c < st.colaborador.c) { return true;}
-          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula < st.colaborador.brujula) { return true;}
-          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini < st.tiene_bikini) { return true;}
-          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas < st.tiene_zapatillas) { return true;}
-          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador < st.tiene_bikini_colaborador) { return true;}
-          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador == st.tiene_bikini_colaborador && tiene_zapatillas_colaborador < st.tiene_zapatillas_colaborador) { return true;}
-          else if(jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_bikini == st.tiene_bikini && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini_colaborador == st.tiene_bikini_colaborador && tiene_zapatillas_colaborador == st.tiene_zapatillas_colaborador && ultimaOrdenColaborador < st.ultimaOrdenColaborador){ return true;}
-        else{ return false;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas < st.tiene_zapatillas) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini < st.tiene_bikini){ return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini && colaborador.f < st.colaborador.f) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini && colaborador.f == st.colaborador.f && colaborador.c < st.colaborador.c) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula && tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini  && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula < st.colaborador.brujula) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula &&  tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_zapatillas_colaborador < st.tiene_zapatillas_colaborador) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula &&  tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_zapatillas_colaborador == st.tiene_zapatillas_colaborador && tiene_bikini_colaborador < st.tiene_bikini_colaborador ) { return true;}
+          else if (jugador.f == st.jugador.f && jugador.c == st.jugador.c && jugador.brujula == st.jugador.brujula &&  tiene_zapatillas == st.tiene_zapatillas && tiene_bikini == st.tiene_bikini && colaborador.f == st.colaborador.f && colaborador.c == st.colaborador.c && colaborador.brujula == st.colaborador.brujula && tiene_zapatillas_colaborador == st.tiene_zapatillas_colaborador && tiene_bikini_colaborador == st.tiene_bikini_colaborador && ultimaOrdenColaborador < st.ultimaOrdenColaborador){ return true;}
+          else{ return false;}
   }
   
 };
@@ -163,10 +164,12 @@ struct nodeN3{
     return (st == nd.st);
   }
 
-  bool operator<(const nodeN3 &nd) const
-    {
-        return (total > nd.total);
+  bool operator<(const nodeN3 &nd) const{
+    if (coste > nd.coste) { return true;}
+        else{
+          return false;
     }
+  }
 };
 
 class ComportamientoJugador : public Comportamiento {
