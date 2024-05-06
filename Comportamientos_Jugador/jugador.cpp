@@ -29,7 +29,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 /* METODOS DE BUSQUEDA DEL COLABORADOR*/
 bool VeoSonambulo(ubicacion jugador, ubicacion colaborador, Orientacion & orientacion_jugador);
 
-bool ColaboradorALaVista(ubicacion &jugador, ubicacion &colaborador);
+
 
 
 Action ComportamientoJugador::think(Sensores sensores)
@@ -437,418 +437,6 @@ bool VeoSonambulo(ubicacion jugador, ubicacion colaborador, Orientacion & orient
   return veo_colaborador;
 }
 
-bool ColaboradorALaVista(ubicacion &jugador, ubicacion &colaborador)
-{
-
-	switch(jugador.brujula){
-		case norte:
-
-			if(jugador.c == colaborador.c){
-				if((jugador.f-1) == colaborador.f)	// posicion 2
-					return true;
-				if((jugador.f-2) == colaborador.f)	// posicion 6
-					return true;
-				if((jugador.f-3) == colaborador.f)	// posicion 12
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-1)){
-				if((jugador.f-1) == colaborador.f)	// posicion 1
-					return true;
-				if((jugador.f-2) == colaborador.f)	// posicion 5
-					return true;
-				if((jugador.f-3) == colaborador.f)	// posicion 11
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-2)){
-				if((jugador.f-2) == colaborador.f)	// posicion 4
-					return true;
-				if((jugador.f-3) == colaborador.f)	// posicion 10
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-3)){
-				if((jugador.f-3) == colaborador.f)	// posicion 9
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+1)){
-				if((jugador.f-1) == colaborador.f)	// posicion 3
-					return true;
-				if((jugador.f-2) == colaborador.f)	// posicion 7
-					return true;
-				if((jugador.f-3) == colaborador.f)	// posicion 13
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+2)){
-				if((jugador.f-2) == colaborador.f)	// posicion 8
-					return true;
-				if((jugador.f-3) == colaborador.f)	// posicion 14
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+3)){
-				if((jugador.f-3) == colaborador.f)	// posicion 15
-					return true;
-			}
-
-		break;
-
-		case noreste:
-			
-			if(jugador.f == colaborador.f){
-				if((jugador.c+1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-1)){
-				if(jugador.c == colaborador.c)		// posicion 1
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-2)){
-				if(jugador.c == colaborador.c)		// posicion 4
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-3)){
-				if(jugador.c == colaborador.c)		// posicion 9
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 10
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 11
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case este:
-
-			if(jugador.f == colaborador.f){
-				if((jugador.c+1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-1)){
-				if((jugador.c+1) == colaborador.c)	// posicion 1
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 11
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-2)){
-				if((jugador.c+2) == colaborador.c)	// posicion 4
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 10
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-3)){
-				if((jugador.c+3) == colaborador.c)	// posicion 9
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+1)){
-				if((jugador.c+1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+2)){
-				if((jugador.c+2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+3)){
-				if((jugador.c+3) == colaborador.c)	// posicion 15
-					return true;
-			}
-			
-		break;
-
-		case sureste:
-			
-			if(jugador.f == colaborador.f){
-				if((jugador.c+1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+1)){
-				if(jugador.c == colaborador.c)		// posicion 1
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+2)){
-				if(jugador.c == colaborador.c)		// posicion 4
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+3)){
-				if(jugador.c == colaborador.c)		// posicion 9
-					return true;
-				if((jugador.c+1) == colaborador.c)	// posicion 10
-					return true;
-				if((jugador.c+2) == colaborador.c)	// posicion 11
-					return true;
-				if((jugador.c+3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case sur:
-
-			if(jugador.c == colaborador.c){
-				if((jugador.f+1) == colaborador.f)	// posicion 2
-					return true;
-				if((jugador.f+2) == colaborador.f)	// posicion 6
-					return true;
-				if((jugador.f+3) == colaborador.f)	// posicion 12
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-1)){
-				if((jugador.f+1) == colaborador.f)	// posicion 3
-					return true;
-				if((jugador.f+2) == colaborador.f)	// posicion 7
-					return true;
-				if((jugador.f+3) == colaborador.f)	// posicion 13
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-2)){
-				if((jugador.f+2) == colaborador.f)	// posicion 8
-					return true;
-				if((jugador.f+3) == colaborador.f)	// posicion 14
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c-3)){
-				if((jugador.f+3) == colaborador.f)	// posicion 15
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+1)){
-				if((jugador.f+1) == colaborador.f)	// posicion 1
-					return true;
-				if((jugador.f+2) == colaborador.f)	// posicion 5
-					return true;
-				if((jugador.f+3) == colaborador.f)	// posicion 11
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+2)){
-				if((jugador.f+2) == colaborador.f)	// posicion 4
-					return true;
-				if((jugador.f+3) == colaborador.f)	// posicion 10
-					return true;
-			}
-
-			if(jugador.c == (colaborador.c+3)){
-				if((jugador.f+3) == colaborador.f)	// posicion 9
-					return true;
-			}
-			
-		break;
-
-		case suroeste:
-			
-			if(jugador.f == colaborador.f){
-				if((jugador.c-1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+1)){
-				if(jugador.c == colaborador.c)		// posicion 1
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+2)){
-				if(jugador.c == colaborador.c)		// posicion 4
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+3)){
-				if(jugador.c == colaborador.c)		// posicion 9
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 10
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 11
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-		break;
-
-		case oeste:
-
-			if(jugador.f == colaborador.f){
-				if((jugador.c-1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-1)){
-				if((jugador.c-1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-2)){
-				if((jugador.c-2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-3)){
-				if((jugador.c-3) == colaborador.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+1)){
-				if((jugador.c-1) == colaborador.c)	// posicion 
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 11
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+2)){
-				if((jugador.c-2) == colaborador.c)	// posicion 4
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 10
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f+3)){
-				if((jugador.c-3) == colaborador.c)	// posicion 9
-					return true;
-			}
-			
-		break;
-		
-		case noroeste:
-			
-			if(jugador.f == colaborador.f){
-				if((jugador.c-1) == colaborador.c)	// posicion 3
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 8
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 15
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-1)){
-				if(jugador.c == colaborador.c)		// posicion 1
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 2
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 7
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 14
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-2)){
-				if(jugador.c == colaborador.c)		// posicion 4
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 5
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 6
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 13
-					return true;
-			}
-
-			if(jugador.f == (colaborador.f-3)){
-				if(jugador.c == colaborador.c)		// posicion 9
-					return true;
-				if((jugador.c-1) == colaborador.c)	// posicion 10
-					return true;
-				if((jugador.c-2) == colaborador.c)	// posicion 11
-					return true;
-				if((jugador.c-3) == colaborador.c)	// posicion 12
-					return true;
-			}
-
-		break;				
-
-	}
-
-	return false;
-}
 
 
 /**Definición del tipo nodo del nivel 0*/
@@ -2118,11 +1706,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 
 					//Si vemos al colaborador
 
-									
-
-
-
-
+						
 				// Generar hijo act_CLB_WALK
 				nodeN3 child_clb_walk = current_node;
 				child_clb_walk.st = applyN3(act_CLB_WALK, current_node.st, child_clb_walk.coste, mapa);
@@ -2142,8 +1726,6 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					frontier.push(child_clb_walk);
 				}
 
-
-
 				//Genera hijo atc_CLB_TURN_SR
 					nodeN3 child_clb_turnsr = current_node;
 					child_clb_turnsr.st = applyN3(act_CLB_TURN_SR, current_node.st, child_clb_turnsr.coste, mapa);
@@ -2151,8 +1733,14 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					child_clb_turnsr.total = child_clb_turnsr.heuristica + child_clb_turnsr.coste;
 					child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
 
-					  
-				if(explored.find(child_clb_turnsr.st) == explored.end())
+				if(child_clb_turnsr.st.colaborador.f == final.f 
+				and child_clb_turnsr.st.colaborador.c == final.c)
+				{	
+
+					current_node = child_clb_turnsr;
+					SolutionFound = true;
+				}	  
+				else if(explored.find(child_clb_turnsr.st) == explored.end())
 				{
 						
 						frontier.push(child_clb_turnsr);
@@ -2169,8 +1757,14 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 				
 				child_clb_stop.secuencia.push_back(act_CLB_STOP);
 
-				
-				if(explored.find(child_clb_stop.st ) == explored.end())
+				if(child_clb_stop.st.colaborador.f == final.f 
+				and child_clb_stop.st.colaborador.c == final.c)
+				{	
+
+					current_node = child_clb_stop;
+					SolutionFound = true;
+				}	
+				else if(explored.find(child_clb_stop.st ) == explored.end())
 				{
 					// Añadir hijo a la lista de nodos por explorar
 					
