@@ -1759,6 +1759,7 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 			if (CasillaTransitable(sig_ubicacion, mapa) and  !(sig_ubicacion.f == st.colaborador.f and sig_ubicacion.c == st.colaborador.c))
 			{
 				sig_ubicacion2 = NextCasilla(sig_ubicacion);
+
 					if (CasillaTransitable(sig_ubicacion2, mapa) and !(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c))
 					{
 						st_result.jugador = sig_ubicacion2;
@@ -2138,6 +2139,9 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 
 
 			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula)){
+				
+				ubicacion aux = NextCasilla(current_node.st.colaborador);
+			
 			
 				// Generar hijo act_CLB_WALK
 				nodeN3 child_clb_walk = current_node;
@@ -2151,15 +2155,15 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					
 					frontier.push(child_clb_walk);
 				}
-
+			
 				//Genera hijo atc_CLB_TURN_SR
 					nodeN3 child_clb_turnsr = current_node;
 					child_clb_turnsr.st = applyN3(act_CLB_TURN_SR, current_node.st, child_clb_turnsr.coste, mapa);
-					child_clb_turnsr.heuristica = Heuristica_Chebysev(child_clb_turnsr.st.colaborador.f,child_clb_walk.st.colaborador.c, final);
+					child_clb_turnsr.heuristica = Heuristica_Chebysev(child_clb_turnsr.st.colaborador.f,child_clb_turnsr.st.colaborador.c, final);
 					child_clb_turnsr.total = child_clb_turnsr.heuristica + child_clb_turnsr.coste;
 					
 
-					 child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+				child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
 				if(explored.find(child_clb_turnsr.st) == explored.end())
 				{
 						 
@@ -2192,7 +2196,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 			// Generar hijo actIDLE
 				nodeN3 child_idle = current_node;
 				child_idle.st = applyN3(actIDLE, current_node.st, child_idle.coste,mapa);
-				child_idle.heuristica = Heuristica_Chebysev(child_idle .st.colaborador.f,child_idle.st.colaborador.c, final);
+				child_idle.heuristica = Heuristica_Chebysev(child_idle.st.colaborador.f,child_idle.st.colaborador.c, final);
 				child_idle.total = child_idle.heuristica + child_idle.coste;
 				
 				child_idle.secuencia.push_back(actIDLE);
@@ -2203,16 +2207,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 				}
 				
 
-				nodeN3 child_run = current_node;
-						child_run.st = applyN3(actRUN, current_node.st,child_run.coste, mapa);
-						child_run.heuristica = Heuristica_Chebysev(child_run.st.colaborador.f,child_run.st.colaborador.c, final);
-						child_run.total = child_run.heuristica + child_run.coste;
-						
-						child_run.secuencia.push_back(actRUN);
-						if (explored.find(child_run.st) == explored.end()){
-							
-							frontier.push(child_run);
-						}
+				
 						
 				//GENERAR HIJO ACT_WALK
 					nodeN3 child_walk = current_node;
@@ -2228,18 +2223,19 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 						frontier.push(child_walk);
 					}	
 
-					// Genera hijo actTURN_SR
-					nodeN3 child_turnsr = current_node;
-					child_turnsr.st = applyN3(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
-					child_turnsr.heuristica = Heuristica_Chebysev(child_turnsr.st.colaborador.f,child_turnsr.st.colaborador.c, final);
-					child_turnsr.total = child_turnsr.heuristica + child_turnsr.coste;
-					
-					child_turnsr.secuencia.push_back(actTURN_SR);
-					if (explored.find(child_turnsr.st) == explored.end())
-					{
+
+					nodeN3 child_run = current_node;
+						child_run.st = applyN3(actRUN, current_node.st,child_run.coste, mapa);
+						child_run.heuristica = Heuristica_Chebysev(child_run.st.colaborador.f,child_run.st.colaborador.c, final);
+						child_run.total = child_run.heuristica + child_run.coste;
 						
-						frontier.push(child_turnsr);
-					}	
+						child_run.secuencia.push_back(actRUN);
+						if (explored.find(child_run.st) == explored.end()){
+							
+							frontier.push(child_run);
+						}
+
+
 
 					// Genera hijo actTURN_L
 					nodeN3 child_turnl = current_node;
@@ -2254,14 +2250,22 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 						frontier.push(child_turnl);
 					}
 
-				
+
+					// Genera hijo actTURN_SR
+					nodeN3 child_turnsr = current_node;
+					child_turnsr.st = applyN3(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
+					child_turnsr.heuristica = Heuristica_Chebysev(child_turnsr.st.colaborador.f,child_turnsr.st.colaborador.c, final);
+					child_turnsr.total = child_turnsr.heuristica + child_turnsr.coste;
+					
+					child_turnsr.secuencia.push_back(actTURN_SR);
+					if (explored.find(child_turnsr.st) == explored.end())
+					{
 						
+						frontier.push(child_turnsr);
+					}		
 			}
 			
-					
-			
-		
-					
+								
 		if(!frontier.empty() and !SolutionFound){
 			current_node = frontier.top();	
 			while(!frontier.empty() and explored.find(current_node.st) != explored.end()){
