@@ -71,7 +71,7 @@ struct stateN3{
   bool tiene_zapatillas, tiene_bikini, tiene_zapatillas_colaborador, tiene_bikini_colaborador;
 
   bool operator== (const stateN3 &x) const{
-    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c && ultimaOrdenColaborador == x.ultimaOrdenColaborador && (tiene_bikini == x.tiene_bikini or tiene_zapatillas && x.tiene_zapatillas) && (tiene_bikini_colaborador == x.tiene_bikini_colaborador  && tiene_zapatillas_colaborador == x.tiene_zapatillas_colaborador))  return true;
+    if(jugador == x.jugador && colaborador.f == x.colaborador.f && colaborador.c == x.colaborador.c &&  tiene_zapatillas == x.tiene_zapatillas && tiene_bikini == x.tiene_bikini && tiene_zapatillas_colaborador == x.tiene_zapatillas_colaborador && tiene_bikini_colaborador == x.tiene_bikini_colaborador && ultimaOrdenColaborador == x.ultimaOrdenColaborador)  return true;
     else return false;
   }
 

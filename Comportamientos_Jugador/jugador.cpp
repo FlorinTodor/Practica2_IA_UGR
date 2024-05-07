@@ -29,7 +29,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 /* METODOS DE BUSQUEDA DEL COLABORADOR*/
 bool VeoSonambulo(ubicacion jugador, ubicacion colaborador, Orientacion & orientacion_jugador);
 
-
+bool ColaboradorALaVista(ubicacion &jugador, ubicacion &colaborador);
 
 
 Action ComportamientoJugador::think(Sensores sensores)
@@ -437,6 +437,418 @@ bool VeoSonambulo(ubicacion jugador, ubicacion colaborador, Orientacion & orient
   return veo_colaborador;
 }
 
+bool ColaboradorALaVista(ubicacion &jugador, ubicacion &colaborador)
+{
+
+	switch(jugador.brujula){
+		case norte:
+
+			if(jugador.c == colaborador.c){
+				if((jugador.f-1) == colaborador.f)	// posicion 2
+					return true;
+				if((jugador.f-2) == colaborador.f)	// posicion 6
+					return true;
+				if((jugador.f-3) == colaborador.f)	// posicion 12
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-1)){
+				if((jugador.f-1) == colaborador.f)	// posicion 1
+					return true;
+				if((jugador.f-2) == colaborador.f)	// posicion 5
+					return true;
+				if((jugador.f-3) == colaborador.f)	// posicion 11
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-2)){
+				if((jugador.f-2) == colaborador.f)	// posicion 4
+					return true;
+				if((jugador.f-3) == colaborador.f)	// posicion 10
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-3)){
+				if((jugador.f-3) == colaborador.f)	// posicion 9
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+1)){
+				if((jugador.f-1) == colaborador.f)	// posicion 3
+					return true;
+				if((jugador.f-2) == colaborador.f)	// posicion 7
+					return true;
+				if((jugador.f-3) == colaborador.f)	// posicion 13
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+2)){
+				if((jugador.f-2) == colaborador.f)	// posicion 8
+					return true;
+				if((jugador.f-3) == colaborador.f)	// posicion 14
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+3)){
+				if((jugador.f-3) == colaborador.f)	// posicion 15
+					return true;
+			}
+
+		break;
+
+		case noreste:
+			
+			if(jugador.f == colaborador.f){
+				if((jugador.c+1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-1)){
+				if(jugador.c == colaborador.c)		// posicion 1
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-2)){
+				if(jugador.c == colaborador.c)		// posicion 4
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-3)){
+				if(jugador.c == colaborador.c)		// posicion 9
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 10
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 11
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case este:
+
+			if(jugador.f == colaborador.f){
+				if((jugador.c+1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-1)){
+				if((jugador.c+1) == colaborador.c)	// posicion 1
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 11
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-2)){
+				if((jugador.c+2) == colaborador.c)	// posicion 4
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 10
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-3)){
+				if((jugador.c+3) == colaborador.c)	// posicion 9
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+1)){
+				if((jugador.c+1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+2)){
+				if((jugador.c+2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+3)){
+				if((jugador.c+3) == colaborador.c)	// posicion 15
+					return true;
+			}
+			
+		break;
+
+		case sureste:
+			
+			if(jugador.f == colaborador.f){
+				if((jugador.c+1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+1)){
+				if(jugador.c == colaborador.c)		// posicion 1
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+2)){
+				if(jugador.c == colaborador.c)		// posicion 4
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+3)){
+				if(jugador.c == colaborador.c)		// posicion 9
+					return true;
+				if((jugador.c+1) == colaborador.c)	// posicion 10
+					return true;
+				if((jugador.c+2) == colaborador.c)	// posicion 11
+					return true;
+				if((jugador.c+3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case sur:
+
+			if(jugador.c == colaborador.c){
+				if((jugador.f+1) == colaborador.f)	// posicion 2
+					return true;
+				if((jugador.f+2) == colaborador.f)	// posicion 6
+					return true;
+				if((jugador.f+3) == colaborador.f)	// posicion 12
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-1)){
+				if((jugador.f+1) == colaborador.f)	// posicion 3
+					return true;
+				if((jugador.f+2) == colaborador.f)	// posicion 7
+					return true;
+				if((jugador.f+3) == colaborador.f)	// posicion 13
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-2)){
+				if((jugador.f+2) == colaborador.f)	// posicion 8
+					return true;
+				if((jugador.f+3) == colaborador.f)	// posicion 14
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c-3)){
+				if((jugador.f+3) == colaborador.f)	// posicion 15
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+1)){
+				if((jugador.f+1) == colaborador.f)	// posicion 1
+					return true;
+				if((jugador.f+2) == colaborador.f)	// posicion 5
+					return true;
+				if((jugador.f+3) == colaborador.f)	// posicion 11
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+2)){
+				if((jugador.f+2) == colaborador.f)	// posicion 4
+					return true;
+				if((jugador.f+3) == colaborador.f)	// posicion 10
+					return true;
+			}
+
+			if(jugador.c == (colaborador.c+3)){
+				if((jugador.f+3) == colaborador.f)	// posicion 9
+					return true;
+			}
+			
+		break;
+
+		case suroeste:
+			
+			if(jugador.f == colaborador.f){
+				if((jugador.c-1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+1)){
+				if(jugador.c == colaborador.c)		// posicion 1
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+2)){
+				if(jugador.c == colaborador.c)		// posicion 4
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+3)){
+				if(jugador.c == colaborador.c)		// posicion 9
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 10
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 11
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+		break;
+
+		case oeste:
+
+			if(jugador.f == colaborador.f){
+				if((jugador.c-1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-1)){
+				if((jugador.c-1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-2)){
+				if((jugador.c-2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-3)){
+				if((jugador.c-3) == colaborador.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+1)){
+				if((jugador.c-1) == colaborador.c)	// posicion 
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 11
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+2)){
+				if((jugador.c-2) == colaborador.c)	// posicion 4
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 10
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f+3)){
+				if((jugador.c-3) == colaborador.c)	// posicion 9
+					return true;
+			}
+			
+		break;
+		
+		case noroeste:
+			
+			if(jugador.f == colaborador.f){
+				if((jugador.c-1) == colaborador.c)	// posicion 3
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 8
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 15
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-1)){
+				if(jugador.c == colaborador.c)		// posicion 1
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 2
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 7
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 14
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-2)){
+				if(jugador.c == colaborador.c)		// posicion 4
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 5
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 6
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 13
+					return true;
+			}
+
+			if(jugador.f == (colaborador.f-3)){
+				if(jugador.c == colaborador.c)		// posicion 9
+					return true;
+				if((jugador.c-1) == colaborador.c)	// posicion 10
+					return true;
+				if((jugador.c-2) == colaborador.c)	// posicion 11
+					return true;
+				if((jugador.c-3) == colaborador.c)	// posicion 12
+					return true;
+			}
+
+		break;				
+
+	}
+
+	return false;
+}
 
 
 /**Definición del tipo nodo del nivel 0*/
@@ -1281,121 +1693,130 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vector<vector<unsigned char>> &mapa){
 	stateN3 principio = st;
 	stateN3 st_result = st;
-	ubicacion sig_ubicacion,sig_ubicacion2;
+	ubicacion sig_ubicacion,sig_ubicacion2,sig_ubicacion3;
 	switch (action)
 	{
 	case actWALK: 
 		sig_ubicacion = NextCasilla(st.jugador);
+		sig_ubicacion2 = NextCasilla(st.colaborador);
 		if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.colaborador.f && sig_ubicacion.c == st.colaborador.c))
 		{
-
-			if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
+			if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion2,mapa) and !(sig_ubicacion2.f == st.jugador.f and sig_ubicacion2.c == st.jugador.c)) 
+			or st_result.ultimaOrdenColaborador == act_CLB_TURN_SR or st_result.ultimaOrdenColaborador == act_CLB_STOP)
 			{
-				st_result.tiene_bikini = true;
-				if (st_result.tiene_zapatillas)
-					st_result.tiene_zapatillas = false;
-			}
 
-			else if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'D')
-			{
-				st_result.tiene_zapatillas = true;
-				if (st_result.tiene_bikini)
-					st_result.tiene_bikini = false;
-			}
+			
 
-			// Actualiza el coste acumulado
-			switch (mapa[st.jugador.f][st.jugador.c])
-			{
-			case 'A':
-				if (!st.tiene_bikini)
-					coste += 100;
-				else
-					coste += 10;
-				break;
+				if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
+				{
+					st_result.tiene_bikini = true;
+					if (st_result.tiene_zapatillas)
+						st_result.tiene_zapatillas = false;
+				}
 
-			case 'B':
-				if (!st.tiene_zapatillas)
-					coste += 50;
-				else
-					coste += 15;
-				break;
+				else if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'D')
+				{
+					st_result.tiene_zapatillas = true;
+					if (st_result.tiene_bikini)
+						st_result.tiene_bikini = false;
+				}
 
-			case 'T':
-				coste += 2;
-				break;
+				// Actualiza el coste acumulado
+				switch (mapa[st.jugador.f][st.jugador.c])
+				{
+				case 'A':
+					if (!st.tiene_bikini)
+						coste += 100;
+					else
+						coste += 10;
+					break;
 
-			default:
-				coste += 1;
-				break;
-			}
-			st_result.jugador = sig_ubicacion;
+				case 'B':
+					if (!st.tiene_zapatillas)
+						coste += 50;
+					else
+						coste += 15;
+					break;
+
+				case 'T':
+					coste += 2;
+					break;
+
+				default:
+					coste += 1;
+					break;
+				}
+				st_result.jugador = sig_ubicacion;
 		}
+	}
 
 	break;
 
 	case actRUN:
 
+		sig_ubicacion3 = NextCasilla(st.colaborador);
 		sig_ubicacion = NextCasilla(st.jugador);
-			if (CasillaTransitable(sig_ubicacion, mapa) and 
-				!(sig_ubicacion.f == st.colaborador.f and sig_ubicacion.c == st.colaborador.c)){
-					sig_ubicacion2 = NextCasilla(sig_ubicacion);
-					if (CasillaTransitable(sig_ubicacion2, mapa) and 
-						!(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c)){
+			if (CasillaTransitable(sig_ubicacion, mapa) and  !(sig_ubicacion.f == st.colaborador.f and sig_ubicacion.c == st.colaborador.c))
+			{
+				sig_ubicacion2 = NextCasilla(sig_ubicacion);
+					if (CasillaTransitable(sig_ubicacion2, mapa) and !(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c))
+					{
+						st_result.jugador = sig_ubicacion2;
+						if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion3,mapa) and !(sig_ubicacion3.f == st_result.jugador.f and sig_ubicacion3.c == st_result.jugador.c)) 
+						or st_result.ultimaOrdenColaborador == act_CLB_TURN_SR or st_result.ultimaOrdenColaborador == act_CLB_STOP)
+						{
+
 							st_result.jugador = sig_ubicacion2;
 
-							if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'K')
+								if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'K')
+								{
+									st_result.tiene_bikini = true;
+									if (st_result.tiene_zapatillas)
+										st_result.tiene_zapatillas = false;
+								}
+
+								else if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'D')
+								{
+									st_result.tiene_zapatillas = true;
+									if (st_result.tiene_bikini)
+										st_result.tiene_bikini = false;
+								}
+
+							switch (mapa[st.jugador.f][st.jugador.c])
 							{
-								st_result.tiene_bikini = true;
-								if (st_result.tiene_zapatillas)
-									st_result.tiene_zapatillas = false;
+
+							case 'A':
+								if (!st.tiene_bikini)
+									coste += 150;
+								else
+									coste += 15;
+								break;
+
+							case 'B':
+								if (!st.tiene_zapatillas)
+									coste += 75;
+								else
+									coste += 25;
+								break;
+
+							case 'T':
+								coste += 3;
+								break;
+
+							default:
+								coste += 1;
+								break;
+						
+						
+						
 							}
 
-							else if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'D')
-							{
-								st_result.tiene_zapatillas = true;
-								if (st_result.tiene_bikini)
-									st_result.tiene_bikini = false;
-							}
+						}
+						else {
+							st_result = st;
+						}
 					}
-				}
-
-
-			
-
-		switch (mapa[st.jugador.f][st.jugador.c])
-		{
-
-		
-			
-			case 'A':
-				if (!st.tiene_bikini)
-					coste += 150;
-				else
-					coste += 15;
-				break;
-
-			case 'B':
-				if (!st.tiene_zapatillas)
-					coste += 75;
-				else
-					coste += 25;
-				break;
-
-			case 'T':
-				coste += 3;
-				break;
-
-			default:
-				coste += 1;
-				break;
-			
-			
-			
 		}
-
-		
-
-
 	break;
 
 
@@ -1468,7 +1889,13 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 	case act_CLB_WALK:
 		sig_ubicacion = NextCasilla(st.colaborador);
 		
+		
 		if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c)){
+
+
+
+			st_result.colaborador = sig_ubicacion;
+			st_result.ultimaOrdenColaborador = act_CLB_WALK;
 
 			if(mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K'){
 				st_result.tiene_bikini_colaborador = true;
@@ -1506,11 +1933,11 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 				coste += 1;
 				break;
 			}
-			st_result.colaborador = sig_ubicacion;
+			
 			
 
 		}
-		st_result.ultimaOrdenColaborador = act_CLB_WALK;
+		
 	break;
 
 
@@ -1589,10 +2016,11 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 
 			case act_CLB_WALK:
 				sig_ubicacion = NextCasilla(st.colaborador);
-
+				
 				if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c))
 				{
 					st_result.colaborador = sig_ubicacion;
+					st_result.ultimaOrdenColaborador = act_CLB_WALK;
 					
 
 					if(mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K'){
@@ -1607,8 +2035,8 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 						st_result.tiene_bikini_colaborador = false;
 					}
 
-				switch (mapa[st.colaborador.f][st.colaborador.c])
-				{
+					switch (mapa[st.colaborador.f][st.colaborador.c])
+					{
 					case 'A':
 						if (!st.tiene_bikini_colaborador)
 							coste += 100;
@@ -1635,7 +2063,7 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 					
 				}
 
-				st_result.ultimaOrdenColaborador = act_CLB_WALK;
+				
 				
 			break;
 
@@ -1673,6 +2101,11 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 	nodeN3 current_node;
 	priority_queue<nodeN3> frontier;
 	set<stateN3> explored;
+	// unordered_set<stateN3> explored;
+	/*
+		Iba a intentarlo, pero poco tiempo para aprender como crear el hash xd
+	
+	*/
 	list<Action> plan;
 	current_node.st = inicio;
 	current_node.coste = 0;
@@ -1699,29 +2132,22 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 			frontier.pop();
 
 			explored.insert(current_node.st);
+			if (current_node.st.colaborador.f == final.f and current_node.st.colaborador.c == final.c){
+     		SolutionFound = true;
+   			}
 
-			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula))
-			//if (ColaboradorALaVista(current_node.st.jugador, current_node.st.colaborador))
-			{
 
-					//Si vemos al colaborador
-
-						
+			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula)){
+			
 				// Generar hijo act_CLB_WALK
 				nodeN3 child_clb_walk = current_node;
 				child_clb_walk.st = applyN3(act_CLB_WALK, current_node.st, child_clb_walk.coste, mapa);
-				child_clb_walk.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
+				child_clb_walk.heuristica = Heuristica_Chebysev(child_clb_walk.st.colaborador.f,child_clb_walk.st.colaborador.c, final);
 				child_clb_walk.total = child_clb_walk.heuristica + child_clb_walk.coste;
+				
 				child_clb_walk.secuencia.push_back(act_CLB_WALK);
-
-				if(child_clb_walk.st.colaborador.f == final.f 
-				and child_clb_walk.st.colaborador.c == final.c)
-				{
+				if(explored.find(child_clb_walk.st) == explored.end()){
 					
-					current_node = child_clb_walk;
-					SolutionFound = true;
-				}      
-				else if(explored.find(child_clb_walk.st) == explored.end()){
 					
 					frontier.push(child_clb_walk);
 				}
@@ -1729,187 +2155,126 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 				//Genera hijo atc_CLB_TURN_SR
 					nodeN3 child_clb_turnsr = current_node;
 					child_clb_turnsr.st = applyN3(act_CLB_TURN_SR, current_node.st, child_clb_turnsr.coste, mapa);
-					child_clb_turnsr.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
+					child_clb_turnsr.heuristica = Heuristica_Chebysev(child_clb_turnsr.st.colaborador.f,child_clb_walk.st.colaborador.c, final);
 					child_clb_turnsr.total = child_clb_turnsr.heuristica + child_clb_turnsr.coste;
-					child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+					
 
-				if(child_clb_turnsr.st.colaborador.f == final.f 
-				and child_clb_turnsr.st.colaborador.c == final.c)
-				{	
-
-					current_node = child_clb_turnsr;
-					SolutionFound = true;
-				}	  
-				else if(explored.find(child_clb_turnsr.st) == explored.end())
+					 child_clb_turnsr.secuencia.push_back(act_CLB_TURN_SR);
+				if(explored.find(child_clb_turnsr.st) == explored.end())
 				{
-						
+						 
 						frontier.push(child_clb_turnsr);
 				}
-
-
+				
 
 				// Generar hijo act_CLB_STOP				
 				nodeN3 child_clb_stop = current_node;
 
 				child_clb_stop.st = applyN3(act_CLB_STOP, current_node.st, child_clb_stop.coste, mapa);
-				child_clb_stop.heuristica = Heuristica_Chebysev(current_node.st.colaborador.f,current_node.st.colaborador.c, final);
+				child_clb_stop.heuristica = Heuristica_Chebysev(child_clb_stop.st.colaborador.f,child_clb_stop.st.colaborador.c, final);
 				child_clb_stop.total = child_clb_stop.heuristica + child_clb_stop.coste;
 				
+				
+
 				child_clb_stop.secuencia.push_back(act_CLB_STOP);
-
-				if(child_clb_stop.st.colaborador.f == final.f 
-				and child_clb_stop.st.colaborador.c == final.c)
-				{	
-
-					current_node = child_clb_stop;
-					SolutionFound = true;
-				}	
-				else if(explored.find(child_clb_stop.st ) == explored.end())
+				if(explored.find(child_clb_stop.st ) == explored.end())
 				{
 					// Añadir hijo a la lista de nodos por explorar
 					
 					frontier.push(child_clb_stop );
-				}		
+				}	
 				
-				
-			
-				
-		
 					
 			}
+				
+			if(!SolutionFound){
 
-			if(!SolutionFound)
-			{
-		
-
-				// Generar hijo actIDLE
+			// Generar hijo actIDLE
 				nodeN3 child_idle = current_node;
 				child_idle.st = applyN3(actIDLE, current_node.st, child_idle.coste,mapa);
-				child_idle.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+				child_idle.heuristica = Heuristica_Chebysev(child_idle .st.colaborador.f,child_idle.st.colaborador.c, final);
 				child_idle.total = child_idle.heuristica + child_idle.coste;
-				child_idle.secuencia.push_back(actIDLE);
 				
+				child_idle.secuencia.push_back(actIDLE);
 				if (explored.find(child_idle.st)== explored.end())
 				{
 					
 					frontier.push(child_idle);
-				}else if (child_idle.st.colaborador.f == final.f and child_idle.st.colaborador.c == final.c){
-					current_node = child_idle;
-					SolutionFound = true;
 				}
 				
 
-				//GENERAR HIJO ACT_WALK
-
-				
-				 ubicacion aux = NextCasilla(current_node.st.jugador);
-     			 if(!(aux.f == current_node.st.colaborador.f and  aux.c != current_node.st.colaborador.c) && CasillaTransitable(aux,mapa))
-				 {
-					nodeN3 child_walk = current_node;
-					child_walk.st = applyN3(actWALK, current_node.st, child_walk.coste, mapa);
-					child_walk.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
-					child_walk.total = child_walk.heuristica + child_walk.coste;
-					child_walk.secuencia.push_back(actWALK);
-					
-					
-					if (explored.find(child_walk.st)== explored.end())
-					{
-						
-						frontier.push(child_walk);
-					}else if(child_walk.st.colaborador.f == final.f and child_walk.st.colaborador.c == final.c)
-					{
-					
-					current_node = child_walk;
-					SolutionFound = true;
-					}    
-					
-					
-				}
-				
-
-				// GENERAR HIJO ACTRUN
-
-				aux = NextCasilla(current_node.st.jugador);
-
-				
-
-
-
-     			if(!(aux.f == current_node.st.colaborador.f and  aux.c != current_node.st.colaborador.c) && CasillaTransitable(aux,mapa)){
-
-					ubicacion aux2 = NextCasilla(aux);
-					if(!(aux2.f == current_node.st.colaborador.f and  aux2.c != current_node.st.colaborador.c) && CasillaTransitable(aux,mapa)){
-						
-						nodeN3 child_run = current_node;
+				nodeN3 child_run = current_node;
 						child_run.st = applyN3(actRUN, current_node.st,child_run.coste, mapa);
-						child_run.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+						child_run.heuristica = Heuristica_Chebysev(child_run.st.colaborador.f,child_run.st.colaborador.c, final);
 						child_run.total = child_run.heuristica + child_run.coste;
+						
 						child_run.secuencia.push_back(actRUN);
-
 						if (explored.find(child_run.st) == explored.end()){
 							
 							frontier.push(child_run);
 						}
-						else if (child_run.st.colaborador.f == final.f and child_run.st.colaborador.c == final.c){
-						current_node = child_run;
-						SolutionFound = true;
-						}
-					}
+						
+				//GENERAR HIJO ACT_WALK
+					nodeN3 child_walk = current_node;
+					child_walk.st = applyN3(actWALK, current_node.st, child_walk.coste, mapa);
+					child_walk.heuristica = Heuristica_Chebysev(child_walk.st.colaborador.f,child_walk.st.colaborador.c, final);
+					child_walk.total = child_walk.heuristica + child_walk.coste;
 					
 					
-				}
+					child_walk.secuencia.push_back(actWALK);
+					if (explored.find(child_walk.st)== explored.end())
+					{
+						
+						frontier.push(child_walk);
+					}	
+
 					// Genera hijo actTURN_SR
 					nodeN3 child_turnsr = current_node;
 					child_turnsr.st = applyN3(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
-					child_turnsr.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_turnsr.heuristica = Heuristica_Chebysev(child_turnsr.st.colaborador.f,child_turnsr.st.colaborador.c, final);
 					child_turnsr.total = child_turnsr.heuristica + child_turnsr.coste;
+					
 					child_turnsr.secuencia.push_back(actTURN_SR);
-
 					if (explored.find(child_turnsr.st) == explored.end())
 					{
 						
 						frontier.push(child_turnsr);
-					}else if (child_turnsr.st.colaborador.f == final.f and child_turnsr.st.colaborador.c == final.c){
-					current_node = child_turnsr;
-					SolutionFound = true;
-					}
+					}	
 
 					// Genera hijo actTURN_L
 					nodeN3 child_turnl = current_node;
 					child_turnl.st = applyN3(actTURN_L, current_node.st, child_turnl.coste, mapa);
-					child_turnl.heuristica = Heuristica_Chebysev(current_node.st.jugador.f,current_node.st.jugador.c, final);
+					child_turnl.heuristica = Heuristica_Chebysev(child_turnl.st.colaborador.f,child_turnl.st.colaborador.c, final);
 					child_turnl.total = child_turnl.heuristica + child_turnl.coste;
+					
 					child_turnl.secuencia.push_back(actTURN_L);
-
 					if (explored.find(child_turnl.st) == explored.end())
 					{
 						
 						frontier.push(child_turnl);
-					}else if (child_turnl.st.colaborador.f == final.f and child_turnl.st.colaborador.c == final.c){
-					current_node = child_turnl;
-					SolutionFound = true;
 					}
-					
 
-
-					
+				
+						
 			}
+			
 					
-
-					
-					
-
+			
+		
 					
 		if(!frontier.empty() and !SolutionFound){
 			current_node = frontier.top();	
 			while(!frontier.empty() and explored.find(current_node.st) != explored.end()){
 				frontier.pop();
+				if (current_node.st.colaborador.f == final.f and current_node.st.colaborador.c == final.c){
+     			SolutionFound = true;
+   				}
 				if(!frontier.empty())
 					current_node = frontier.top();
 			}
 		}
+	
 	}
-
 	if (SolutionFound)
 	{
 		plan = current_node.secuencia;
