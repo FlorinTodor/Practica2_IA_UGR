@@ -2178,6 +2178,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 			frontier.pop();
 
 			explored.insert(current_node.st);
+
 			if (current_node.st.colaborador.f == final.f and current_node.st.colaborador.c == final.c){
      		SolutionFound = true;
    			}
@@ -2185,7 +2186,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 
 			if(VeoSonambulo(current_node.st.jugador,current_node.st.colaborador,current_node.st.jugador.brujula)){
 				
-				ubicacion aux = NextCasilla(current_node.st.colaborador);
+				
 			
 			
 				// Generar hijo act_CLB_WALK
@@ -2195,6 +2196,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 				child_clb_walk.total = child_clb_walk.heuristica + child_clb_walk.coste;
 				
 				child_clb_walk.secuencia.push_back(act_CLB_WALK);
+				
 				if(explored.find(child_clb_walk.st) == explored.end()){
 					
 					
@@ -2299,7 +2301,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 
 
 					
-
+					
 
 					
 					// Genera hijo actTURN_L
@@ -2320,7 +2322,6 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					}
 
 
-				
 					// Genera hijo actTURN_SR
 					nodeN3 child_turnsr = current_node;
 					child_turnsr.st = applyN3(actTURN_SR, current_node.st, child_turnsr.coste, mapa);
@@ -2337,6 +2338,8 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					current_node = child_turnsr;
 					SolutionFound = true;
 				}
+				
+					
 
 				
 			}
