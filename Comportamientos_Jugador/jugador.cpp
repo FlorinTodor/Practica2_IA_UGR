@@ -1597,9 +1597,6 @@ list<Action> costeUniforme(const stateN2 &inicio, const ubicacion &final, const 
 					
 				}
 
-
-			
-
 			if(!SolutionFound)
 			{
 					// Generar hijo actIDLE
@@ -1701,11 +1698,11 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 		sig_ubicacion = NextCasilla(st.jugador);
 		sig_ubicacion2 = NextCasilla(st.colaborador);
 		if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.colaborador.f && sig_ubicacion.c == st.colaborador.c))
-		{		st_result.jugador = sig_ubicacion;
-			if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion2,mapa) and !(sig_ubicacion2.f == st_result.jugador.f and sig_ubicacion2.c == st_result.jugador.c)) 
+		{		
+			if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion2,mapa) and !(sig_ubicacion2.f == sig_ubicacion.f and sig_ubicacion2.c == sig_ubicacion.c)) 
 			or st_result.ultimaOrdenColaborador == act_CLB_TURN_SR or st_result.ultimaOrdenColaborador == act_CLB_STOP)
 			{
-
+				
 				puede=true;
 
 				if (mapa[sig_ubicacion.f][sig_ubicacion.c] == 'K')
@@ -1747,6 +1744,8 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 					coste += 1;
 					break;
 				}
+
+			st_result.jugador = sig_ubicacion;
 				
 		}
 		else{
@@ -1766,12 +1765,12 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 
 					if (CasillaTransitable(sig_ubicacion2, mapa) and !(sig_ubicacion2.f == st.colaborador.f and sig_ubicacion2.c == st.colaborador.c))
 					{
-						st_result.jugador = sig_ubicacion2;
-						if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion3,mapa) and !(sig_ubicacion3.f == st_result.jugador.f and sig_ubicacion3.c == sig_ubicacion2.c)) 
+						
+						if((st_result.ultimaOrdenColaborador == act_CLB_WALK && CasillaTransitable(sig_ubicacion3,mapa) and !(sig_ubicacion3.f == sig_ubicacion2.f and sig_ubicacion3.c == sig_ubicacion2.c)) 
 						or st_result.ultimaOrdenColaborador == act_CLB_TURN_SR or st_result.ultimaOrdenColaborador == act_CLB_STOP)
 						{
 
-							
+								st_result.jugador = sig_ubicacion2;
 								puede=true;
 								if (mapa[sig_ubicacion2.f][sig_ubicacion2.c] == 'K')
 								{
@@ -1996,14 +1995,11 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 	break;
 
 	case act_CLB_STOP:
-	sig_ubicacion = NextCasilla(st.colaborador);
-		
-		
-		if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c)){
+	
 
 			st_result.colaborador = principio.colaborador;
 			st_result.ultimaOrdenColaborador = act_CLB_STOP;
-		}
+		
 	break;
 
 	}
@@ -2106,16 +2102,12 @@ stateN3 applyN3(const Action &action, const stateN3 &st, int &coste, const vecto
 			break;
 
 			case act_CLB_STOP:
-			sig_ubicacion = NextCasilla(st.colaborador);
-				
-				if (CasillaTransitable(sig_ubicacion, mapa) && !(sig_ubicacion.f == st.jugador.f && sig_ubicacion.c == st.jugador.c))
-				{
+			
 				st_result.colaborador = principio.colaborador;
 				st_result.ultimaOrdenColaborador = act_CLB_STOP;
-				}
-				else {
-					st_result=st;
-				}
+				
+			
+				
 			break;
 
 		}
@@ -2252,10 +2244,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 					
 					frontier.push(child_idle);
 				}
-				else if (child_idle.st.colaborador.f == final.f and child_idle.st.colaborador.c == final.c){
-					current_node = child_idle;
-					SolutionFound = true;
-				}
+				
 				
 
 				
@@ -2273,17 +2262,12 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 						
 						frontier.push(child_walk);
 					}
-					else if (child_walk.st.colaborador.f == final.f && child_walk.st.colaborador.c == final.c)
-					{
-						SolutionFound = true;
-						current_node = child_walk;
-					}
 					
 
 
 
 					
-					nodeN3 child_run = current_node;
+						nodeN3 child_run = current_node;
 						child_run.st = applyN3(actRUN, current_node.st,child_run.coste, mapa);
 						child_run.heuristica = Heuristica_Chebysev(child_run.st.colaborador.f,child_run.st.colaborador.c, final);
 						child_run.total = child_run.heuristica + child_run.coste;
@@ -2293,16 +2277,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 							
 							frontier.push(child_run);
 						}
-						else if (child_run.st.colaborador.f == final.f and child_run.st.colaborador.c == final.c){
-						SolutionFound = true;
-						current_node = child_run;
 						
-						}
-
-
-					
-					
-
 					
 					// Genera hijo actTURN_L
 					nodeN3 child_turnl = current_node;
@@ -2316,10 +2291,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 						
 						frontier.push(child_turnl);
 					}
-					else if (child_turnl.st.colaborador.f == final.f and child_turnl.st.colaborador.c == final.c){
-					current_node = child_turnl;
-					SolutionFound = true;
-					}
+					
 
 
 					// Genera hijo actTURN_SR
@@ -2334,10 +2306,7 @@ list<Action> aEstrella(const stateN3 &inicio, const ubicacion &final, const vect
 						
 						frontier.push(child_turnsr);
 					}	
-					else if (child_turnsr.st.colaborador.f == final.f and child_turnsr.st.colaborador.c == final.c){
-					current_node = child_turnsr;
-					SolutionFound = true;
-				}
+					
 				
 					
 
