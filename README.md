@@ -87,4 +87,3 @@ El entorno es un mapa con diferentes tipos de terrenos y elementos:
 -   La gestión de un **mapa interno** y el uso de **planificación** permiten comportamientos mucho más inteligentes y adaptativos que el enfoque puramente reactivo.
 -   La correcta gestión de las precondiciones en las acciones es crucial para evitar bloqueos y comportamientos no deseados.
 -   **Posible mejora:** Incorporar algoritmos de planificación más avanzados como **A***, utilizando heurísticas de coste (batería, tiempo) para optimizar rutas en entornos más grandes o con recursos más limitados.
-```
