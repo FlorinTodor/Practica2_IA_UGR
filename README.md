@@ -1,5 +1,4 @@
 
-```markdown
 # 🤖 Práctica 2 – Agente Basado en Objetivos
 
 **Asignatura:** Inteligencia Artificial – Curso 2023/2024  
